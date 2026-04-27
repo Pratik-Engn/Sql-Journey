@@ -1,0 +1,17 @@
+# Day 01 Notes
+
+## Source
+- Data with Bara (dataset practice)
+- HackerRank (basic problems)
+
+## Concepts Practiced
+- SELECT
+- WHERE
+
+## Key Learning
+- SELECT retrieves data from a table  
+- WHERE filters rows based on conditions  
+
+## Practice Done
+- Retrieved all records from table  
+- Filtered data based on salary condition
