@@ -77,8 +77,3 @@ Day-01/
 - Create a solid foundation for Data Engineering  
 
 ---
-
-## Mindset
-
-Consistency > Perfection  
-Small steps daily → Long-term mastery
