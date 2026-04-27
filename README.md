@@ -2,7 +2,7 @@
 Daily SQL grind | Data Engineering journey
 # My SQL Learning Journey 🚀
 
-**Started:** April 16, 2026  
+**Started:** April 27, 2026  
 **Goal:** Become job-ready for Data Engineering roles  
 **Target:** 500+ SQL problems by September 2026  
 
@@ -22,13 +22,18 @@ This repository documents my daily SQL practice, problem-solving approach, and u
 - **Level:** Beginner (building fundamentals)  
 - **Focus Areas:** SELECT, WHERE, JOINs, Aggregations, Subqueries  
 
-*Last updated: April 16, 2026*
+*Last updated: April 27, 2026*
 
 ---
 
 ## Learning Plan
-
 **Target:** 500+ SQL problems (April–August 2026)
+
+
+## 📖 Learning Resources
+
+- Data with Bara (structured SQL learning & practice)
+- Alex The Analyst (SQL + Data Analytics concepts)
 
 ## 🛠 Tech Stack
 
