@@ -30,6 +30,11 @@ This repository documents my daily SQL practice, problem-solving approach, and u
 
 **Target:** 500+ SQL problems (April–August 2026)
 
+## 🛠 Tech Stack
+
+- SQL (MySQL)
+- Practice Platforms: LeetCode, HackerRank
+
 **Daily Goal:**  
 - 5–6 problems (Mon–Sat)  
 - Sunday: revision & concept strengthening  
