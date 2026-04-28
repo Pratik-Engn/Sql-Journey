@@ -1,0 +1,12 @@
+# Day 02 Notes
+
+## Concepts
+- WHERE
+- ORDER BY
+
+## Learning
+- WHERE filters rows based on condition  
+- ORDER BY sorts the result (ASC / DESC)  
+
+## Insight
+Filtering happens before sorting in SQL execution
