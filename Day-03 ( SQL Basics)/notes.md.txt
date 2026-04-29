@@ -1,0 +1,12 @@
+# Day 03 Notes
+
+## Concepts
+- LIMIT
+- OFFSET
+
+## Learning
+- LIMIT restricts number of rows returned  
+- OFFSET skips rows before returning results  
+
+## Insight
+LIMIT is mostly used with ORDER BY to get top results
