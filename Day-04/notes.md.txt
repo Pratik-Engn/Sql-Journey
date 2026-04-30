@@ -1,0 +1,16 @@
+# Day 04 Notes
+
+## Concepts
+- COUNT
+- SUM
+- AVG
+- GROUP BY
+
+## Learning
+- COUNT counts rows  
+- SUM adds values  
+- AVG calculates average  
+- GROUP BY groups data for aggregation  
+
+## Insight
+GROUP BY is used to analyze data category-wise (like per department)
