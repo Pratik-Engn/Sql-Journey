@@ -1,0 +1,9 @@
+# Day 5 SQL Notes: HAVING and DISTINCT
+
+## DISTINCT
+DISTINCT is used to remove duplicate rows from the result set.
+
+Syntax:
+```sql
+SELECT DISTINCT column_name
+FROM table_name;
