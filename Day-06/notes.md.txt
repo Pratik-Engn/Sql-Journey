@@ -1,6 +1,6 @@
 # Day 6 — SQL INNER JOIN Notes
 
-## What I Learned Today
+=> What I Learned Today
 
 Today I learned about **INNER JOIN**, one of the most important SQL concepts used to combine data from multiple tables.
 
@@ -10,9 +10,8 @@ For example, if one table contains customer details and another contains order d
 
 ---
 
-## Syntax
-
-```sql
+=> Syntax
+**sql**
 SELECT columns
 FROM table1
 INNER JOIN table2
