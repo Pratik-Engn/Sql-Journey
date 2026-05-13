@@ -1,8 +1,3 @@
--- ========================================
--- DAY 6: SQL INNER JOIN PRACTICE QUERIES
--- ========================================
-
-
 -- Query 1: Basic INNER JOIN
 -- Show customer names with their order IDs
 
@@ -10,8 +5,6 @@ SELECT c.name, o.order_id
 FROM customers c
 INNER JOIN orders o
 ON c.customer_id = o.customer_id;
-
-
 
 -- Query 2: INNER JOIN with WHERE
 -- Show customers whose order amount is greater than 600
@@ -22,8 +15,6 @@ INNER JOIN orders o
 ON c.customer_id = o.customer_id
 WHERE o.amount > 600;
 
-
-
 -- Query 3: INNER JOIN with ORDER BY
 -- Show customers ordered by highest purchase amount
 
@@ -33,8 +24,6 @@ INNER JOIN orders o
 ON c.customer_id = o.customer_id
 ORDER BY o.amount DESC;
 
-
-
 -- Query 4: INNER JOIN with GROUP BY
 -- Show total spending per customer
 
@@ -43,8 +32,6 @@ FROM customers c
 INNER JOIN orders o
 ON c.customer_id = o.customer_id
 GROUP BY c.name;
-
-
 
 -- Query 5: INNER JOIN with HAVING
 -- Show customers who spent more than 1000
