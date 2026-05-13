@@ -1,0 +1,19 @@
+# Day 6 — SQL INNER JOIN Notes
+
+## What I Learned Today
+
+Today I learned about **INNER JOIN**, one of the most important SQL concepts used to combine data from multiple tables.
+
+INNER JOIN returns only the rows where matching values exist in both tables.
+
+For example, if one table contains customer details and another contains order details, INNER JOIN helps connect them using a common key like `customer_id`.
+
+---
+
+## Syntax
+
+```sql
+SELECT columns
+FROM table1
+INNER JOIN table2
+ON table1.common_column = table2.common_column;
