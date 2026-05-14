@@ -1,0 +1,125 @@
+# Day 7 — SQL LEFT JOIN Notes
+
+## What I Learned Today
+
+Today I learned about **LEFT JOIN**, which is used to return all rows from the left table and matching rows from the right table.
+
+If there is no matching record in the right table, SQL returns `NULL`.
+
+---
+
+## Syntax
+
+```sql
+SELECT columns
+FROM table1
+LEFT JOIN table2
+ON table1.common_column = table2.common_column;
+```
+
+---
+
+## Core Concept
+
+LEFT JOIN keeps everything from the left table.
+
+Matching rows from the right table are added where available.
+
+If no match exists:
+- Right-side values become NULL
+- Left-side row still remains
+
+Example:
+
+Customers:
+1, 2, 3, 4
+
+Orders:
+2, 3
+
+Result:
+1 → NULL
+2 → Match
+3 → Match
+4 → NULL
+
+---
+
+## Difference Between INNER JOIN and LEFT JOIN
+
+### INNER JOIN
+Returns only matching records.
+
+Example:
+A = 1,2,3
+B = 2,3,4
+
+Result:
+2,3
+
+---
+
+### LEFT JOIN
+Returns all records from left table + matches from right table.
+
+Example:
+A = 1,2,3
+B = 2,3,4
+
+Result:
+1,2,3
+
+Where:
+1 has NULL because no match exists.
+
+---
+
+## Key Concepts Learned
+
+### 1. Preserves Left Table Data
+Even if no matching record exists, LEFT JOIN keeps the left-side row.
+
+---
+
+### 2. NULL Detection
+LEFT JOIN is commonly used with:
+
+```sql
+WHERE right_table.column IS NULL
+```
+
+This helps find missing relationships.
+
+Example:
+Customers with no orders.
+
+---
+
+### 3. Aggregation with LEFT JOIN
+LEFT JOIN can be combined with:
+- SUM()
+- COUNT()
+- GROUP BY
+- ORDER BY
+
+This helps generate analytics reports.
+
+---
+
+## Real World Use Cases
+
+LEFT JOIN is useful for:
+
+- Customers who never ordered
+- Employees without assigned departments
+- Products with zero sales
+- Students without enrolled courses
+- Detecting missing records
+
+---
+
+## Interview Summary
+
+INNER JOIN = matching records only
+
+LEFT JOIN = all left records + matching right records

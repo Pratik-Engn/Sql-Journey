@@ -1,0 +1,57 @@
+-- ========================================
+-- DAY 7: SQL LEFT JOIN PRACTICE QUERIES
+-- ========================================
+
+
+-- Query 1: Basic LEFT JOIN
+-- Show all customers and their orders
+
+SELECT c.name, o.order_id
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id;
+
+
+
+-- Query 2: LEFT JOIN with WHERE
+-- Show customers with orders greater than 600
+
+SELECT c.name, o.amount
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id
+WHERE o.amount > 600;
+
+
+
+-- Query 3: LEFT JOIN with NULL filtering
+-- Show customers who never placed any order
+
+SELECT c.name
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id
+WHERE o.customer_id IS NULL;
+
+
+
+-- Query 4: LEFT JOIN with GROUP BY
+-- Show total spending for all customers
+
+SELECT c.name, SUM(o.amount) AS total_spent
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id
+GROUP BY c.name;
+
+
+
+-- Query 5: LEFT JOIN with ORDER BY
+-- Show customers sorted by spending
+
+SELECT c.name, SUM(o.amount) AS total_spent
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id
+GROUP BY c.name
+ORDER BY total_spent DESC;
