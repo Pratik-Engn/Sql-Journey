@@ -1,12 +1,10 @@
 # Day 7 — SQL LEFT JOIN Notes
 
-## What I Learned Today
+=> What I Learned Today
 
 Today I learned about **LEFT JOIN**, which is used to return all rows from the left table and matching rows from the right table.
 
 If there is no matching record in the right table, SQL returns `NULL`.
-
----
 
 ## Syntax
 
