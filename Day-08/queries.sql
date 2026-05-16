@@ -1,4 +1,4 @@
--- Day 8: RIGHT JOIN Practice
+-- Day 8: RIGHT JOIN (Opposite of left join)
 -- SQL Journey
 
 -- Creating tables
@@ -13,7 +13,7 @@ CREATE TABLE departments (
     department_name VARCHAR(50)
 );
 
--- Inserting sample data
+-- Inserting sample data (all the data are AI generated and random for the use of repository)
 INSERT INTO employees VALUES
 (1, 'Rahul', 101),
 (2, 'Priya', 102),
