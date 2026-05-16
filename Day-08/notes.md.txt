@@ -1,10 +1,12 @@
-# Day 8 - RIGHT JOIN Notes
+=>> Day 8 - RIGHT JOIN Notes
 
-## What is RIGHT JOIN?
+=> What is RIGHT JOIN?
 
 RIGHT JOIN returns:
 - all records from the RIGHT table
 - matching records from the LEFT table
+- in basic terms its basically the opposite of left join. 
+- much less used in order of the joins
 
 If no match exists in the left table, NULL values are returned.
 
@@ -17,7 +19,7 @@ ON table1.column = table2.column;
 
 ---
 
-## Tables Used
+=>> Tables Used
 
 Employees table:
 Contains employee details.
@@ -29,9 +31,9 @@ Departments is the RIGHT table in our queries.
 
 ---
 
-## Queries Practiced
+==> Queries Practiced
 
-### 1. Basic RIGHT JOIN
+==> 1. Basic RIGHT JOIN
 Purpose:
 Shows every department, even if no employee belongs to that department.
 
@@ -40,7 +42,7 @@ Marketing appears even though no employee is assigned.
 
 ---
 
-### 2. Departments without employees
+==> 2. Departments without employees
 Purpose:
 Find departments that currently have no employees.
 
@@ -49,7 +51,7 @@ If employee ID becomes NULL after join, it means no match was found.
 
 ---
 
-### 3. Employee + Department details
+==> 3. Employee + Department details
 Purpose:
 Shows combined information from both tables.
 
@@ -58,7 +60,7 @@ Useful when building reports.
 
 ---
 
-### 4. RIGHT JOIN with filtering
+==> 4. RIGHT JOIN with filtering
 Purpose:
 Filter joined data for a specific department.
 
@@ -67,7 +69,7 @@ RIGHT JOIN works normally with WHERE clauses.
 
 ---
 
-### 5. Count employees per department
+==> 5. Count employees per department
 Purpose:
 Count how many employees exist in each department.
 
