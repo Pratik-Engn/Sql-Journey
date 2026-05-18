@@ -1,16 +1,16 @@
 # SQL Journey Day 9 - UNION
 
-## What is UNION?
+==> What is UNION?
 
 UNION combines the result of two or more SELECT queries into one result set.
 
-Think of it like merging multiple lists into one.
+Think of it like merging multiple lists into one. (Definations used are mostly from my sources such as Data with brar and some are corrected through different AI platforms.)
 
 ---
 
-## UNION vs UNION ALL
+==> UNION vs UNION ALL
 
-### UNION
+===> UNION
 - Removes duplicate rows
 - Cleaner output
 - Slightly slower because duplicate checking happens
@@ -26,7 +26,7 @@ Emma
 
 ---
 
-### UNION ALL
+===> UNION ALL
 - Keeps duplicate rows
 - Faster
 - Useful when duplicate data matters
@@ -43,9 +43,9 @@ Emma
 
 ---
 
-## Rules of UNION
+==> Rules of UNION
 
-### 1. Same number of columns
+===> 1. Same number of columns
 
 Correct:
 SELECT name FROM table1
@@ -59,7 +59,7 @@ SELECT name FROM table2
 
 ---
 
-### 2. Compatible data types
+===> 2. Compatible data types
 
 Examples:
 - INT with INT
@@ -67,13 +67,13 @@ Examples:
 
 ---
 
-### 3. Column names come from first SELECT
+===> 3. Column names come from first SELECT
 
 SQL uses first query column names in final result.
 
 ---
 
-### 4. ORDER BY only at the end
+===> 4. ORDER BY only at the end
 
 Correct:
 SELECT name FROM table1
@@ -83,7 +83,7 @@ ORDER BY name;
 
 ---
 
-## Real-world use cases
+==> Real-world use cases
 
 - Combining active + former employees
 - Combining customers from multiple sources
