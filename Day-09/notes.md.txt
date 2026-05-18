@@ -1,0 +1,91 @@
+# SQL Journey Day 9 - UNION
+
+## What is UNION?
+
+UNION combines the result of two or more SELECT queries into one result set.
+
+Think of it like merging multiple lists into one.
+
+---
+
+## UNION vs UNION ALL
+
+### UNION
+- Removes duplicate rows
+- Cleaner output
+- Slightly slower because duplicate checking happens
+
+Example:
+A = John, Mike
+B = Mike, Emma
+
+Result:
+John
+Mike
+Emma
+
+---
+
+### UNION ALL
+- Keeps duplicate rows
+- Faster
+- Useful when duplicate data matters
+
+Example:
+A = John, Mike
+B = Mike, Emma
+
+Result:
+John
+Mike
+Mike
+Emma
+
+---
+
+## Rules of UNION
+
+### 1. Same number of columns
+
+Correct:
+SELECT name FROM table1
+UNION
+SELECT name FROM table2
+
+Wrong:
+SELECT name, salary FROM table1
+UNION
+SELECT name FROM table2
+
+---
+
+### 2. Compatible data types
+
+Examples:
+- INT with INT
+- VARCHAR with VARCHAR
+
+---
+
+### 3. Column names come from first SELECT
+
+SQL uses first query column names in final result.
+
+---
+
+### 4. ORDER BY only at the end
+
+Correct:
+SELECT name FROM table1
+UNION
+SELECT name FROM table2
+ORDER BY name;
+
+---
+
+## Real-world use cases
+
+- Combining active + former employees
+- Combining customers from multiple sources
+- Merging employee lists
+- Combining filtered results
