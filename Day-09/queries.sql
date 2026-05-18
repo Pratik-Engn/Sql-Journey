@@ -2,7 +2,7 @@
 -- SQL JOURNEY DAY 9 : UNION
 -- ============================================
 
-USE company_db;
+Disclaimer: All the data are AI generated and been used to for practice queries 
 
 -- ============================================
 -- TABLE 1
