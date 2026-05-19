@@ -1,0 +1,104 @@
+# SQL Day 9 - Anti Join Notes
+
+## What is Anti Join?
+Anti Join is used to find records from one table that do NOT have matching records in another table.
+
+Example:
+- Customers who never placed orders
+- Products never sold
+- Employees not in payroll
+
+SQL does not provide a direct ANTI JOIN keyword.
+
+We simulate Anti Join using:
+1. LEFT JOIN + IS NULL
+2. NOT EXISTS
+3. NOT IN
+
+---
+
+## Method 1: LEFT JOIN + IS NULL
+
+Syntax:
+SELECT a.*
+FROM table_a a
+LEFT JOIN table_b b
+ON a.id = b.id
+WHERE b.id IS NULL;
+
+Explanation:
+LEFT JOIN returns all rows from the left table.
+If no match exists in the right table, NULL appears.
+Filtering NULL gives unmatched rows.
+
+Best for:
+- Beginners
+- Easy readability
+- Interview explanations
+
+---
+
+## Method 2: NOT EXISTS
+
+Syntax:
+SELECT *
+FROM table_a a
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM table_b b
+    WHERE a.id = b.id
+);
+
+Explanation:
+Checks whether matching rows exist.
+If no matching row exists, the record is returned.
+
+Best for:
+- Large datasets
+- Better optimization
+- Cleaner production SQL
+
+---
+
+## Method 3: NOT IN
+
+Syntax:
+SELECT *
+FROM table_a
+WHERE id NOT IN (
+    SELECT id FROM table_b
+);
+
+Explanation:
+Returns rows whose IDs do not exist in another table.
+
+Warning:
+If NULL exists in subquery results, query may behave unexpectedly.
+
+---
+
+## Comparison
+
+LEFT JOIN + IS NULL
+- Easy
+- Beginner friendly
+- Good readability
+
+NOT EXISTS
+- Faster in many databases
+- Cleaner logic
+- Safer with NULLs
+
+NOT IN
+- Simple syntax
+- Risky with NULL values
+
+---
+
+## Real Use Cases
+- Users who never logged in
+- Students who never enrolled
+- Employees without payroll
+- Products never sold
+- Teachers without classes
+- Drivers without rides
