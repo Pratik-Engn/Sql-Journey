@@ -1,2 +1,4 @@
 *.sql linguist-language=SQL
+*.sql linguist-detectable=true
 *.txt linguist-documentation=true
+*.md linguist-documentation=true
