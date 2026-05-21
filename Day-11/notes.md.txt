@@ -1,0 +1,118 @@
+# SQL Day 10 - String Functions
+
+## What are String Functions?
+String functions are SQL functions used to manipulate text values.
+
+Examples:
+- Combining names
+- Extracting letters
+- Formatting text output
+
+Today we covered:
+1. CONCAT()
+2. LEFT()
+3. RIGHT()
+
+---
+
+## 1. CONCAT()
+
+Definition:
+CONCAT combines two or more strings into one single string.
+
+Syntax:
+SELECT CONCAT(string1, string2);
+
+Example:
+SELECT CONCAT(first_name, ' ', last_name)
+FROM employees;
+
+Explanation:
+If first_name = John
+and last_name = Doe
+
+Output:
+John Doe
+
+Use Cases:
+- Full names
+- Labels
+- Messages
+- Combining columns
+
+---
+
+## 2. LEFT()
+
+Definition:
+LEFT extracts characters from the beginning of a string.
+
+Syntax:
+SELECT LEFT(column_name, number);
+
+Example:
+SELECT LEFT(first_name, 3)
+FROM employees;
+
+Explanation:
+If name = Michael
+
+Output:
+Mic
+
+Use Cases:
+- Short codes
+- Prefix extraction
+- Initial letters
+- Name abbreviations
+
+---
+
+## 3. RIGHT()
+
+Definition:
+RIGHT extracts characters from the end of a string.
+
+Syntax:
+SELECT RIGHT(column_name, number);
+
+Example:
+SELECT RIGHT(first_name, 3)
+FROM employees;
+
+Explanation:
+If name = Michael
+
+Output:
+ael
+
+Use Cases:
+- Suffix extraction
+- Last letters
+- File extensions
+- Ending characters
+
+---
+
+## Comparison
+
+CONCAT()
+- Combines strings
+- Creates labels/messages
+
+LEFT()
+- Extracts from start
+- Prefix based extraction
+
+RIGHT()
+- Extracts from end
+- Suffix based extraction
+
+---
+
+## Real Life Examples
+- Create full customer names
+- Generate welcome messages
+- Extract initials
+- Extract short product codes
+- Find file extensions
