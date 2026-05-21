@@ -2,7 +2,7 @@
 Daily SQL grind | Data Engineering journey
 # My SQL Learning Journey 🚀
 
-**Started:** April 27, 2026  
+**Started:** May 11, 2026  
 **Goal:** Become job-ready for Data Engineering roles  
 **Target:** 500+ SQL problems by September 2026  
 
