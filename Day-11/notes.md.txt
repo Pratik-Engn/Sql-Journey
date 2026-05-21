@@ -1,6 +1,6 @@
-# SQL Day 10 - String Functions
+==> SQL Day 10 - String Functions
 
-## What are String Functions?
+==> What are String Functions?
 String functions are SQL functions used to manipulate text values.
 
 Examples:
@@ -15,7 +15,7 @@ Today we covered:
 
 ---
 
-## 1. CONCAT()
+==> 1. CONCAT()
 
 Definition:
 CONCAT combines two or more strings into one single string.
@@ -42,7 +42,7 @@ Use Cases:
 
 ---
 
-## 2. LEFT()
+==> 2. LEFT()
 
 Definition:
 LEFT extracts characters from the beginning of a string.
@@ -68,7 +68,7 @@ Use Cases:
 
 ---
 
-## 3. RIGHT()
+==> 3. RIGHT()
 
 Definition:
 RIGHT extracts characters from the end of a string.
@@ -94,7 +94,7 @@ Use Cases:
 
 ---
 
-## Comparison
+==> Comparison
 
 CONCAT()
 - Combines strings
