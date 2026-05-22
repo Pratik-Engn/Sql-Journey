@@ -1,0 +1,150 @@
+# SQL Day 11 - String Manipulation Functions
+
+## What are String Manipulation Functions?
+String manipulation functions are used to modify, clean, format, or transform text data in SQL.
+
+Today's functions:
+1. CONCAT()
+2. UPPER()
+3. LOWER()
+4. TRIM()
+5. REPLACE()
+
+---
+
+## 1. CONCAT()
+
+Definition:
+Combines multiple strings into one single string.
+
+Syntax:
+SELECT CONCAT(string1, string2);
+
+Example:
+SELECT CONCAT(first_name, ' ', last_name)
+FROM employees;
+
+Output Example:
+John Doe
+
+Use Cases:
+- Full names
+- Labels
+- Greetings
+- Combined text output
+
+---
+
+## 2. UPPER()
+
+Definition:
+Converts text into uppercase letters.
+
+Syntax:
+SELECT UPPER(column_name);
+
+Example:
+SELECT UPPER(first_name)
+FROM employees;
+
+Output Example:
+JOHN
+
+Use Cases:
+- Standard formatting
+- Case-insensitive comparison
+- Clean reporting output
+
+---
+
+## 3. LOWER()
+
+Definition:
+Converts text into lowercase letters.
+
+Syntax:
+SELECT LOWER(column_name);
+
+Example:
+SELECT LOWER(first_name)
+FROM employees;
+
+Output Example:
+john
+
+Use Cases:
+- Email formatting
+- Uniform text storage
+- Data cleaning
+
+---
+
+## 4. TRIM()
+
+Definition:
+Removes extra spaces from the beginning and end of a string.
+
+Syntax:
+SELECT TRIM(column_name);
+
+Example:
+SELECT TRIM(customer_name)
+FROM customers;
+
+Output Example:
+'   Alex   ' → Alex
+
+Use Cases:
+- Cleaning messy data
+- Removing accidental spaces
+- Better comparisons
+
+---
+
+## 5. REPLACE()
+
+Definition:
+Replaces part of a string with another value.
+
+Syntax:
+SELECT REPLACE(column_name, old_text, new_text);
+
+Example:
+SELECT REPLACE(product_name, 'Laptop', 'Notebook')
+FROM products;
+
+Output Example:
+Gaming Laptop → Gaming Notebook
+
+Use Cases:
+- Rename text values
+- Format strings
+- Clean unwanted characters
+
+---
+
+## Quick Comparison
+
+CONCAT()
+- Combines strings
+
+UPPER()
+- Converts to uppercase
+
+LOWER()
+- Converts to lowercase
+
+TRIM()
+- Removes extra spaces
+
+REPLACE()
+- Swaps text values
+
+---
+
+## Real Life Examples
+- Create full employee names
+- Standardize customer names
+- Clean dirty imported data
+- Replace incorrect product naming
+- Prepare data for reporting
