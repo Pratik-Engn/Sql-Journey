@@ -2,27 +2,27 @@
 Daily SQL grind | Data Engineering journey
 # My SQL Learning Journey 🚀
 
-**Started:** May 11, 2026  
-**Goal:** Become job-ready for Data Engineering roles  
-**Target:** 500+ SQL problems by September 2026  
+Documenting my SQL learning journey toward Data Engineering
 
 ---
 
 ## About Me
 
-I'm Pratik, transitioning from teaching to data engineering.
+Hi, I'm Pratik — transitioning from teaching into Data Engineering.
 
-This repository documents my daily SQL practice, problem-solving approach, and understanding of data concepts.
+This repository documents my SQL learning journey, daily practice, and understanding of data concepts as I build strong fundamentals for SQL-heavy data roles.
 
 ---
 
 ## Current Progress
 
-- **Problems Solved:** 0  
-- **Level:** Beginner (building fundamentals)  
-- **Focus Areas:** SELECT, WHERE, JOINs, Aggregations, Subqueries  
+- Journey Started: 27 April 2026
+- Current Learning Day: Day 11
+- Learning Style: Daily SQL practice + notes + query implementation
+- Focus Areas: SELECT, WHERE, JOINS, Aggregations, UNION, String Functions
+- Goal: Become job-ready for Data Engineering roles through consistent practice
 
-*Last updated: April 27, 2026*
+*Last updated: May 22nd, 2026*
 
 ---
 
