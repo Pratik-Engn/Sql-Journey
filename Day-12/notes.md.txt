@@ -1,6 +1,6 @@
-# SQL Day 11 - String Manipulation Functions
+=> SQL Day 12 - String Manipulation Functions
 
-## What are String Manipulation Functions?
+==> What are String Manipulation Functions?
 String manipulation functions are used to modify, clean, format, or transform text data in SQL.
 
 Today's functions:
@@ -12,7 +12,7 @@ Today's functions:
 
 ---
 
-## 1. CONCAT()
+==> 1. CONCAT()
 
 Definition:
 Combines multiple strings into one single string.
@@ -35,7 +35,7 @@ Use Cases:
 
 ---
 
-## 2. UPPER()
+==> 2. UPPER()
 
 Definition:
 Converts text into uppercase letters.
@@ -57,7 +57,7 @@ Use Cases:
 
 ---
 
-## 3. LOWER()
+==> 3. LOWER()
 
 Definition:
 Converts text into lowercase letters.
@@ -79,7 +79,7 @@ Use Cases:
 
 ---
 
-## 4. TRIM()
+==> 4. TRIM()
 
 Definition:
 Removes extra spaces from the beginning and end of a string.
@@ -101,7 +101,7 @@ Use Cases:
 
 ---
 
-## 5. REPLACE()
+==> 5. REPLACE()
 
 Definition:
 Replaces part of a string with another value.
@@ -123,7 +123,7 @@ Use Cases:
 
 ---
 
-## Quick Comparison
+==> Quick Comparison
 
 CONCAT()
 - Combines strings
@@ -142,7 +142,7 @@ REPLACE()
 
 ---
 
-## Real Life Examples
+==> Real Life Examples
 - Create full employee names
 - Standardize customer names
 - Clean dirty imported data
