@@ -1,0 +1,162 @@
+# SQL Day 13 - Numeric Functions
+
+## What are Numeric Functions?
+Numeric functions are SQL functions used to perform mathematical calculations on numbers.
+
+Used for:
+- Rounding values
+- Absolute differences
+- Mathematical operations
+- Salary/price calculations
+- Data analysis
+
+Today's functions:
+1. ABS()
+2. ROUND()
+3. CEIL()
+4. FLOOR()
+5. MOD()
+6. POWER()
+7. SQRT()
+
+---
+
+## 1. ABS()
+
+Definition:
+Returns absolute positive value of a number.
+
+Syntax:
+SELECT ABS(number);
+
+Example:
+ABS(-150)
+
+Output:
+150
+
+Use Cases:
+- Difference calculations
+- Removing negative signs
+
+---
+
+## 2. ROUND()
+
+Definition:
+Rounds a number to nearest value.
+
+Syntax:
+SELECT ROUND(number);
+SELECT ROUND(number, decimal_places);
+
+Example:
+ROUND(45.6789, 2)
+
+Output:
+45.68
+
+Use Cases:
+- Price formatting
+- Decimal cleanup
+
+---
+
+## 3. CEIL()
+
+Definition:
+Rounds number upward to nearest integer.
+
+Syntax:
+SELECT CEIL(number);
+
+Example:
+CEIL(45.2)
+
+Output:
+46
+
+Use Cases:
+- Billing calculations
+- Upper rounding
+
+---
+
+## 4. FLOOR()
+
+Definition:
+Rounds number downward to nearest integer.
+
+Syntax:
+SELECT FLOOR(number);
+
+Example:
+FLOOR(45.9)
+
+Output:
+45
+
+Use Cases:
+- Lower rounding
+- Quantity calculations
+
+---
+
+## 5. MOD()
+
+Definition:
+Returns remainder after division.
+
+Syntax:
+SELECT MOD(a, b);
+
+Example:
+MOD(10, 3)
+
+Output:
+1
+
+Use Cases:
+- Even/odd checks
+- Grouping logic
+
+---
+
+## 6. POWER()
+
+Definition:
+Raises a number to a given power.
+
+Syntax:
+SELECT POWER(base, exponent);
+
+Example:
+POWER(2, 3)
+
+Output:
+8
+
+---
+
+## 7. SQRT()
+
+Definition:
+Returns square root.
+
+Syntax:
+SELECT SQRT(number);
+
+Example:
+SQRT(64)
+
+Output:
+8
+
+---
+
+## Real Life Use Cases
+- Salary calculations
+- Product price formatting
+- Mathematical reporting
+- Student mark analysis
+- Financial computations
