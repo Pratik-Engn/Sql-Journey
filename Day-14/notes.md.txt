@@ -1,0 +1,135 @@
+# SQL Day 13 - Set Operators
+
+## What are Set Operators?
+Set operators combine results from multiple SELECT queries.
+
+Used for:
+- Combining datasets
+- Finding common records
+- Finding missing records
+- Comparing tables
+
+Today's operators:
+1. UNION
+2. UNION ALL
+3. INTERSECT
+4. EXCEPT
+
+Important Rule:
+Both SELECT queries must have:
+- Same number of columns
+- Compatible data types
+- Similar column order
+
+---
+
+## 1. UNION
+
+Definition:
+Combines results from two queries and removes duplicates.
+
+Syntax:
+SELECT column_name FROM table1
+UNION
+SELECT column_name FROM table2;
+
+Example:
+Employee names + manager names
+
+Use Cases:
+- Unique combined records
+- Merging datasets
+
+---
+
+## 2. UNION ALL
+
+Definition:
+Combines results and keeps duplicates.
+
+Syntax:
+SELECT column_name FROM table1
+UNION ALL
+SELECT column_name FROM table2;
+
+Example:
+All customer names including repeated ones
+
+Use Cases:
+- Faster than UNION
+- When duplicates matter
+
+Difference:
+UNION removes duplicates
+UNION ALL keeps duplicates
+
+---
+
+## 3. INTERSECT
+
+Definition:
+Returns only common rows from both queries.
+
+Syntax:
+SELECT column_name FROM table1
+INTERSECT
+SELECT column_name FROM table2;
+
+Example:
+People existing in both employees and managers
+
+Use Cases:
+- Common users
+- Shared datasets
+- Matching records
+
+---
+
+## 4. EXCEPT
+
+Definition:
+Returns rows from first query that do not exist in second query.
+
+Syntax:
+SELECT column_name FROM table1
+EXCEPT
+SELECT column_name FROM table2;
+
+Example:
+Employees who are not managers
+
+Use Cases:
+- Missing records
+- Difference analysis
+- Data comparison
+
+Note:
+MySQL does NOT support INTERSECT and EXCEPT directly.
+Use joins/subqueries instead.
+
+Oracle uses MINUS instead of EXCEPT.
+
+---
+
+## Quick Comparison
+
+UNION
+- Removes duplicates
+
+UNION ALL
+- Keeps duplicates
+
+INTERSECT
+- Common records only
+
+EXCEPT
+- First query minus second query
+
+---
+
+## Real Life Use Cases
+- Combine customer databases
+- Find premium users
+- Compare employee roles
+- Missing record analysis
+- Student graduation comparison
