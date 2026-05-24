@@ -1,6 +1,6 @@
-# SQL Day 13 - Set Operators
+==> SQL Day 13 - Set Operators
 
-## What are Set Operators?
+==> What are Set Operators?
 Set operators combine results from multiple SELECT queries.
 
 Used for:
@@ -23,7 +23,7 @@ Both SELECT queries must have:
 
 ---
 
-## 1. UNION
+==> 1. UNION
 
 Definition:
 Combines results from two queries and removes duplicates.
@@ -42,7 +42,7 @@ Use Cases:
 
 ---
 
-## 2. UNION ALL
+==> 2. UNION ALL
 
 Definition:
 Combines results and keeps duplicates.
@@ -64,8 +64,7 @@ UNION removes duplicates
 UNION ALL keeps duplicates
 
 ---
-
-## 3. INTERSECT
+==> 3. INTERSECT
 
 Definition:
 Returns only common rows from both queries.
