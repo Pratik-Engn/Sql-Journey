@@ -1,0 +1,92 @@
+# SQL Day 15 - SUBSTRING Function
+
+## What is SUBSTRING()?
+SUBSTRING() is used to extract a specific portion of text from a string.
+
+Useful for:
+- Extracting initials
+- Creating short codes
+- Email parsing
+- Product prefixes
+- Name formatting
+
+---
+
+## Syntax
+
+SELECT SUBSTRING(column_name, start_position, length);
+
+Parameters:
+- column_name → text column
+- start_position → where extraction starts
+- length → how many characters to extract
+
+---
+
+## Example
+
+SELECT SUBSTRING('Michael', 1, 4);
+
+Output:
+Mich
+
+Explanation:
+Start at position 1
+Take 4 characters
+
+---
+
+## Query Examples Covered
+- Employee short names
+- Customer short names
+- Product prefixes
+- Middle character extraction
+- Email preview extraction
+- Book short codes
+- Initial extraction
+- Partial last names
+
+---
+
+## Practical Use Cases
+
+1. Initials
+Example:
+John → J
+
+2. Short Product Codes
+Gaming Laptop → Gami
+
+3. Email Parsing
+abc@gmail.com → abc@gmai
+
+4. User Display Names
+Alexander → Alex
+
+5. Book Codes
+Database Systems → Dat
+
+---
+
+## Important Notes
+
+SUBSTRING(string, start, length)
+
+Example:
+SUBSTRING('HELLO', 2, 3)
+
+Output:
+ELL
+
+Meaning:
+Start from position 2
+Take 3 characters
+
+---
+
+## Related Similar Functions
+LEFT()
+RIGHT()
+TRIM()
+REPLACE()
+CONCAT()
