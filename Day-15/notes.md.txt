@@ -1,6 +1,6 @@
-# SQL Day 15 - SUBSTRING Function
+-> SQL Day 15 - SUBSTRING Function
 
-## What is SUBSTRING()?
+==> What is SUBSTRING()?
 SUBSTRING() is used to extract a specific portion of text from a string.
 
 Useful for:
@@ -12,7 +12,7 @@ Useful for:
 
 ---
 
-## Syntax
+==> Syntax
 
 SELECT SUBSTRING(column_name, start_position, length);
 
@@ -23,7 +23,7 @@ Parameters:
 
 ---
 
-## Example
+==> Example
 
 SELECT SUBSTRING('Michael', 1, 4);
 
@@ -36,7 +36,7 @@ Take 4 characters
 
 ---
 
-## Query Examples Covered
+==> Query Examples Covered
 - Employee short names
 - Customer short names
 - Product prefixes
@@ -48,7 +48,7 @@ Take 4 characters
 
 ---
 
-## Practical Use Cases
+==> Practical Use Cases
 
 1. Initials
 Example:
@@ -68,7 +68,7 @@ Database Systems → Dat
 
 ---
 
-## Important Notes
+==> Important Notes
 
 SUBSTRING(string, start, length)
 
@@ -84,7 +84,7 @@ Take 3 characters
 
 ---
 
-## Related Similar Functions
+==> Related Similar Functions
 LEFT()
 RIGHT()
 TRIM()
