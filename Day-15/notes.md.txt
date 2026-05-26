@@ -1,4 +1,4 @@
--> SQL Day 15 - SUBSTRING Function
+-> SQL Day 15 - SUBSTRING Function (Subtopic but important)
 
 ==> What is SUBSTRING()?
 SUBSTRING() is used to extract a specific portion of text from a string.
