@@ -1,6 +1,6 @@
-# SQL Day 16 - Date and Time Functions
+=> SQL Day 16 - Date and Time Functions
 
-## How SQL Handles Date and Time
+==> How SQL Handles Date and Time
 
 Dates and times in SQL usually come from 3 main sources:
 
@@ -10,7 +10,7 @@ Dates and times in SQL usually come from 3 main sources:
 
 ---
 
-## 1. Dates Already Present in Database
+==> 1. Dates Already Present in Database
 
 Example:
 hire_date = 2022-10-15
@@ -50,7 +50,7 @@ Use Cases:
 
 ---
 
-## 2. Dates Stored as Strings
+==> 2. Dates Stored as Strings
 
 Sometimes bad database design stores dates as text.
 
@@ -74,7 +74,7 @@ Use Cases:
 
 ---
 
-## 3. System Generated Date/Time
+==> 3. System Generated Date/Time
 
 Functions:
 
@@ -120,7 +120,7 @@ Use Cases:
 
 ---
 
-## Real Life Applications
+==> Real Life Applications
 
 - Employee joining duration
 - Monthly sales reports
