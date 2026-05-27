@@ -1,0 +1,129 @@
+# SQL Day 16 - Date and Time Functions
+
+## How SQL Handles Date and Time
+
+Dates and times in SQL usually come from 3 main sources:
+
+1. Already stored in database columns
+2. Stored as strings and converted
+3. Generated using SQL system functions
+
+---
+
+## 1. Dates Already Present in Database
+
+Example:
+hire_date = 2022-10-15
+
+Functions:
+YEAR()
+MONTH()
+DAY()
+DATE()
+
+Examples:
+
+YEAR(hire_date)
+Returns:
+2022
+
+MONTH(hire_date)
+Returns:
+10
+
+DAY(hire_date)
+Returns:
+15
+
+DATE(event_datetime)
+Extracts only date from datetime.
+
+Example:
+2026-05-27 18:45:10
+becomes
+2026-05-27
+
+Use Cases:
+- Employee hire analysis
+- Order monthly reports
+- Event filtering
+
+---
+
+## 2. Dates Stored as Strings
+
+Sometimes bad database design stores dates as text.
+
+Example:
+'2026-05-27'
+
+Need conversion using:
+
+STR_TO_DATE()
+
+Syntax:
+STR_TO_DATE(string_column, '%Y-%m-%d')
+
+Example:
+STR_TO_DATE('2026-05-27', '%Y-%m-%d')
+
+Use Cases:
+- Cleaning imported CSV data
+- Legacy databases
+- Fixing string date columns
+
+---
+
+## 3. System Generated Date/Time
+
+Functions:
+
+NOW()
+Returns:
+Current date + time
+
+Example:
+2026-05-27 22:10:05
+
+---
+
+CURDATE()
+Returns:
+Current date only
+
+Example:
+2026-05-27
+
+---
+
+CURTIME()
+Returns:
+Current time only
+
+Example:
+22:10:05
+
+---
+
+DATEDIFF()
+
+Definition:
+Difference between two dates in days.
+
+Example:
+DATEDIFF(CURDATE(), hire_date)
+
+Use Cases:
+- Employee tenure
+- Days since registration
+- Event age tracking
+
+---
+
+## Real Life Applications
+
+- Employee joining duration
+- Monthly sales reports
+- Today's scheduled events
+- CSV date cleaning
+- Customer registration analysis
