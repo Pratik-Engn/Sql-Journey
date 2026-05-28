@@ -144,7 +144,7 @@ Output Example:
 
 ---
 
-## Important GETDATE() Related Functions
+==> Important GETDATE() Related Functions
 
 CAST(GETDATE() AS DATE)
 - Returns only date
@@ -172,7 +172,7 @@ DATEADD()
 
 ---
 
-## Today's Additional Practice Covered
+==> Today's Additional Practice Covered
 
 - Current date extraction
 - Current time extraction
@@ -185,7 +185,7 @@ DATEADD()
 
 ---
 
-## Important Note
+==> Important Note
 
 GETDATE() is mostly used in:
 - SQL Server
