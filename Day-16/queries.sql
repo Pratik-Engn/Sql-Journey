@@ -83,3 +83,98 @@ WHERE MONTH(order_date) = MONTH(CURDATE());
 SELECT *
 FROM events
 WHERE DATE(event_datetime) = CURDATE();
+
+---------------------------------------------
+More on get date() function as Day 17
+-----------------------------------------------
+USE sql_practice;
+
+-- DATASETS USED:
+-- employees(employee_id, first_name, hire_date)
+-- orders(order_id, order_date)
+-- customers(customer_id, customer_name, registration_date)
+-- events(event_id, event_name, event_datetime)
+
+-- =========================================
+-- GETDATE / CURRENT DATE PRACTICE QUERIES
+-- =========================================
+
+-- 1. Current system date and time
+SELECT GETDATE();
+
+-- 2. Current date only
+SELECT CAST(GETDATE() AS DATE);
+
+-- 3. Current time only
+SELECT CAST(GETDATE() AS TIME);
+
+-- 4. Employee working days from joining date till today
+SELECT first_name,
+       DATEDIFF(DAY, hire_date, GETDATE()) AS total_working_days
+FROM employees;
+
+-- 5. Days since customer registration
+SELECT customer_name,
+       DATEDIFF(DAY, registration_date, GETDATE()) AS days_registered
+FROM customers;
+
+-- 6. Orders placed today
+SELECT *
+FROM orders
+WHERE CAST(order_date AS DATE) = CAST(GETDATE() AS DATE);
+
+-- 7. Events happening today
+SELECT *
+FROM events
+WHERE CAST(event_datetime AS DATE) = CAST(GETDATE() AS DATE);
+
+-- 8. Employees joined this year
+SELECT *
+FROM employees
+WHERE YEAR(hire_date) = YEAR(GETDATE());
+
+-- 9. Orders placed this month
+SELECT *
+FROM orders
+WHERE MONTH(order_date) = MONTH(GETDATE());
+
+-- 10. Events happening this year
+SELECT *
+FROM events
+WHERE YEAR(event_datetime) = YEAR(GETDATE());
+
+-- 11. Current year
+SELECT YEAR(GETDATE()) AS current_year;
+
+-- 12. Current month
+SELECT MONTH(GETDATE()) AS current_month;
+
+-- 13. Current day
+SELECT DAY(GETDATE()) AS current_day;
+
+-- 14. Current hour
+SELECT DATEPART(HOUR, GETDATE()) AS current_hour;
+
+-- 15. Current minute
+SELECT DATEPART(MINUTE, GETDATE()) AS current_minute;
+
+-- 16. Employee joining anniversary check
+SELECT first_name, hire_date
+FROM employees
+WHERE MONTH(hire_date) = MONTH(GETDATE());
+
+-- 17. Orders from last 7 days
+SELECT *
+FROM orders
+WHERE order_date >= DATEADD(DAY, -7, GETDATE());
+
+-- 18. Events from last 30 days
+SELECT *
+FROM events
+WHERE event_datetime >= DATEADD(DAY, -30, GETDATE());
+
+-- 19. Add 10 days to current date
+SELECT DATEADD(DAY, 10, GETDATE());
+
+-- 20. Add 1 month to current date
+SELECT DATEADD(MONTH, 1, GETDATE());
