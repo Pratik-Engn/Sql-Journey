@@ -127,3 +127,76 @@ Use Cases:
 - Today's scheduled events
 - CSV date cleaning
 - Customer registration analysis
+-------------------------------------
+Day 17 as a update
+---------------------------------
+# Day 17 Additional Update - GETDATE() Function
+
+## What is GETDATE()?
+
+GETDATE() is a SQL Server function that returns the current system date and time.
+
+Example:
+SELECT GETDATE();
+
+Output Example:
+2026-05-28 22:45:10.123
+
+---
+
+## Important GETDATE() Related Functions
+
+CAST(GETDATE() AS DATE)
+- Returns only date
+
+CAST(GETDATE() AS TIME)
+- Returns only time
+
+YEAR(GETDATE())
+- Current year
+
+MONTH(GETDATE())
+- Current month
+
+DAY(GETDATE())
+- Current day
+
+DATEPART()
+- Extracts hour/minute/second
+
+DATEDIFF()
+- Difference between dates
+
+DATEADD()
+- Add/subtract days/months/years
+
+---
+
+## Today's Additional Practice Covered
+
+- Current date extraction
+- Current time extraction
+- Employee working days
+- Orders placed today
+- Orders from last 7 days
+- Events from last 30 days
+- Date addition
+- Current month/year filtering
+
+---
+
+## Important Note
+
+GETDATE() is mostly used in:
+- SQL Server
+
+Equivalent functions in other databases:
+
+MySQL:
+NOW()
+
+PostgreSQL:
+CURRENT_TIMESTAMP
+
+Oracle:
+SYSDATE
