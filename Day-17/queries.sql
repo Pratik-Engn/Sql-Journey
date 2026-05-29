@@ -1,4 +1,4 @@
-USE sql_practice;
+---USE sql_practice;
 
 -- DATASETS USED:
 -- employees(employee_id, first_name, hire_date)
