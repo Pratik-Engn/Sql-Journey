@@ -84,9 +84,11 @@ SELECT *
 FROM events
 WHERE DATE(event_datetime) = CURDATE();
 
+
 ---------------------------------------------
 More on get date() function as Day 17
 -----------------------------------------------
+ (Day 17 SQL date part extraction functions)
 USE sql_practice;
 
 -- DATASETS USED:
@@ -177,4 +179,8 @@ WHERE event_datetime >= DATEADD(DAY, -30, GETDATE());
 SELECT DATEADD(DAY, 10, GETDATE());
 
 -- 20. Add 1 month to current date
+<<<<<<< HEAD
 SELECT DATEADD(MONTH, 1, GETDATE());
+=======
+SELECT DATEADD(MONTH, 1, GETDATE());
+>>>>>>> 909d877 (Day 17 SQL date part extraction functions)

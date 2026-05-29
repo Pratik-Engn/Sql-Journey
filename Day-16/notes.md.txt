@@ -126,11 +126,17 @@ Use Cases:
 - Monthly sales reports
 - Today's scheduled events
 - CSV date cleaning
+<<<<<<< HEAD
 - Customer registration analysis
 -------------------------------------
 Day 17 as a update
 ---------------------------------
 # Day 17 Additional Update - GETDATE() Function
+=======
+- Customer registration analysis--
+----
+# Day 16 Additional Update - GETDATE() Function
+>>>>>>> 909d877 (Day 17 SQL date part extraction functions)
 
 ## What is GETDATE()?
 
@@ -144,7 +150,11 @@ Output Example:
 
 ---
 
+<<<<<<< HEAD
 ==> Important GETDATE() Related Functions
+=======
+## Important GETDATE() Related Functions
+>>>>>>> 909d877 (Day 17 SQL date part extraction functions)
 
 CAST(GETDATE() AS DATE)
 - Returns only date
@@ -172,7 +182,11 @@ DATEADD()
 
 ---
 
+<<<<<<< HEAD
 ==> Today's Additional Practice Covered
+=======
+## Today's Additional Practice Covered
+>>>>>>> 909d877 (Day 17 SQL date part extraction functions)
 
 - Current date extraction
 - Current time extraction
@@ -185,7 +199,10 @@ DATEADD()
 
 ---
 
-==> Important Note
+ HEAD
+=======
+## Important Note
+ (Day 17 SQL date part extraction functions)
 
 GETDATE() is mostly used in:
 - SQL Server
@@ -199,4 +216,8 @@ PostgreSQL:
 CURRENT_TIMESTAMP
 
 Oracle:
+<<<<<<< HEAD
 SYSDATE
+=======
+SYSDATE
+>>>>>>> 909d877 (Day 17 SQL date part extraction functions)

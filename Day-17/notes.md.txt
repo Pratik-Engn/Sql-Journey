@@ -1,0 +1,148 @@
+# SQL Day 17 - Date Part Extraction Functions
+
+## Introduction
+
+Date Part Extraction functions are used to retrieve specific components from a date or datetime value.
+
+Instead of working with the complete date, we can extract:
+
+- Year
+- Month
+- Day
+- Hour
+- Minute
+- Second
+
+These functions are commonly used in reporting, analytics, dashboards, and filtering records.
+
+---
+
+## YEAR()
+
+Returns the year portion from a date.
+
+Syntax:
+
+YEAR(date_column)
+
+Example:
+
+YEAR('2026-05-28')
+
+Output:
+
+2026
+
+Use Cases:
+- Annual reports
+- Employee joining year
+- Sales by year
+
+---
+
+## MONTH()
+
+Returns the month portion from a date.
+
+Syntax:
+
+MONTH(date_column)
+
+Example:
+
+MONTH('2026-05-28')
+
+Output:
+
+5
+
+Use Cases:
+- Monthly sales reports
+- Monthly registrations
+- Monthly analytics
+
+---
+
+## DAY()
+
+Returns the day portion from a date.
+
+Syntax:
+
+DAY(date_column)
+
+Example:
+
+DAY('2026-05-28')
+
+Output:
+
+28
+
+Use Cases:
+- Daily reporting
+- Event scheduling
+- Daily transactions
+
+---
+
+## DATEPART()
+
+DATEPART() extracts a specific component from a date or datetime value.
+
+Syntax:
+
+DATEPART(part, date_column)
+
+Examples:
+
+DATEPART(YEAR, hire_date)
+
+DATEPART(MONTH, hire_date)
+
+DATEPART(DAY, hire_date)
+
+DATEPART(HOUR, event_datetime)
+
+DATEPART(MINUTE, event_datetime)
+
+---
+
+## Why DATEPART()?
+
+YEAR(), MONTH(), and DAY() are specialized functions.
+
+DATEPART() is more flexible because it can extract:
+
+- Year
+- Month
+- Day
+- Hour
+- Minute
+- Second
+- Week
+- Quarter
+
+from the same date value.
+
+---
+
+## Practical Applications
+
+- Employee joining year analysis
+- Monthly order tracking
+- Daily transaction reports
+- Event time analysis
+- Dashboard filtering
+- Business reporting
+
+---
+
+## Functions Covered Today
+
+1. YEAR()
+2. MONTH()
+3. DAY()
+4. DATEPART()
+
+These functions form the foundation of SQL date analysis and are frequently used in real-world reporting queries.
