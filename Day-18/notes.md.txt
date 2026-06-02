@@ -1,6 +1,6 @@
-# SQL Day 18 - DATENAME(), DATETRUNC(), EOMONTH()
+==>SQL Day 18 - DATENAME(), DATETRUNC(), EOMONTH()
 
-## DATENAME() vs DATEPART()
+==> DATENAME() vs DATEPART()
 
 These two functions extract parts from dates.
 
