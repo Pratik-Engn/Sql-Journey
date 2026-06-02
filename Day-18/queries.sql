@@ -1,4 +1,5 @@
 USE sql_practice;
+Notes according to lectures
 
 -- DATASETS USED:
 -- employees(employee_id, first_name, hire_date)
