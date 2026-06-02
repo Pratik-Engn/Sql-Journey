@@ -1,0 +1,232 @@
+# SQL Day 18 - DATENAME(), DATETRUNC(), EOMONTH()
+
+## DATENAME() vs DATEPART()
+
+These two functions extract parts from dates.
+
+However they return different data types.
+
+---
+
+## DATEPART()
+
+Returns an INTEGER.
+
+Syntax:
+
+DATEPART(part, date)
+
+Example:
+
+SELECT DATEPART(MONTH, GETDATE());
+
+Output:
+
+5
+
+Use Cases:
+- Grouping
+- Sorting
+- Filtering
+- Numeric calculations
+
+Examples:
+
+DATEPART(YEAR, GETDATE())
+DATEPART(MONTH, GETDATE())
+DATEPART(DAY, GETDATE())
+
+---
+
+## DATENAME()
+
+Returns a STRING.
+
+Syntax:
+
+DATENAME(part, date)
+
+Example:
+
+SELECT DATENAME(MONTH, GETDATE());
+
+Output:
+
+May
+
+Examples:
+
+DATENAME(MONTH, GETDATE())
+DATENAME(WEEKDAY, GETDATE())
+
+Possible Outputs:
+
+May
+January
+Monday
+Friday
+
+Use Cases:
+- Reports
+- Dashboards
+- Human-readable outputs
+
+---
+
+## Difference
+
+DATEPART(MONTH, GETDATE())
+
+Output:
+
+5
+
+Datatype:
+
+Integer
+
+---------------------------------
+
+DATENAME(MONTH, GETDATE())
+
+Output:
+
+May
+
+Datatype:
+
+String
+
+---------------------------------
+
+DATEPART = Number
+
+DATENAME = Text
+
+---
+
+# DATETRUNC()
+
+Introduced in SQL Server 2022.
+
+Purpose:
+
+Move a date to the beginning of a date period.
+
+Syntax:
+
+DATETRUNC(period, date)
+
+Examples:
+
+DATETRUNC(MONTH, GETDATE())
+
+Output:
+
+2026-05-01
+
+---
+
+DATETRUNC(YEAR, GETDATE())
+
+Output:
+
+2026-01-01
+
+---
+
+DATETRUNC(QUARTER, GETDATE())
+
+Output:
+
+2026-04-01
+
+---
+
+Use Cases:
+
+- Monthly reports
+- Quarterly reports
+- Time series analysis
+- Dashboard filtering
+
+---
+
+# EOMONTH()
+
+Purpose:
+
+Returns the last day of a month.
+
+Syntax:
+
+EOMONTH(date)
+
+Example:
+
+EOMONTH(GETDATE())
+
+Output:
+
+2026-05-31
+
+---
+
+Next Month End
+
+EOMONTH(GETDATE(), 1)
+
+Output:
+
+2026-06-30
+
+---
+
+Use Cases
+
+- Payroll calculations
+- Billing cycles
+- Monthly closing reports
+- Subscription systems
+
+---
+
+# First Day vs Last Day
+
+Beginning of month:
+
+DATETRUNC(MONTH, GETDATE())
+
+Output:
+
+2026-05-01
+
+End of month:
+
+EOMONTH(GETDATE())
+
+Output:
+
+2026-05-31
+
+---
+
+# Important Interview Point
+
+To get:
+
+First Day of Month
+
+Use:
+
+DATETRUNC(MONTH, date)
+
+To get:
+
+Last Day of Month
+
+Use:
+
+EOMONTH(date)
+
+Both are heavily used in business reporting systems.
