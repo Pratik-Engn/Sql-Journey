@@ -1,0 +1,202 @@
+# SQL Day 19 - Formatting and Casting Date & Time Functions
+
+## Why Format Dates?
+
+Databases store dates in standard formats.
+
+Example:
+
+2026-05-30 22:45:10
+
+Users usually want:
+
+30/05/2026
+
+or
+
+May 30, 2026
+
+Formatting functions help display dates in user-friendly formats.
+
+---
+
+# CAST()
+
+Purpose:
+
+Convert one datatype into another datatype.
+
+Syntax:
+
+CAST(expression AS datatype)
+
+Examples:
+
+CAST(GETDATE() AS DATE)
+
+Output:
+
+2026-05-30
+
+---
+
+CAST(GETDATE() AS TIME)
+
+Output:
+
+22:45:10
+
+---
+
+Use Cases:
+
+- Remove time from datetime
+- Extract date only
+- Data conversion
+
+---
+
+# CONVERT()
+
+Purpose:
+
+Convert and format values.
+
+Syntax:
+
+CONVERT(datatype, expression, style)
+
+Examples:
+
+Style 101
+
+MM/DD/YYYY
+
+Style 103
+
+DD/MM/YYYY
+
+Style 23
+
+YYYY-MM-DD
+
+Example:
+
+CONVERT(VARCHAR, GETDATE(), 103)
+
+Output:
+
+30/05/2026
+
+---
+
+# FORMAT()
+
+Purpose:
+
+Custom formatting of date and time.
+
+Syntax:
+
+FORMAT(date, format_string)
+
+Examples:
+
+FORMAT(GETDATE(), 'dd/MM/yyyy')
+
+Output:
+
+30/05/2026
+
+---
+
+FORMAT(GETDATE(), 'MMMM')
+
+Output:
+
+May
+
+---
+
+FORMAT(GETDATE(), 'dddd')
+
+Output:
+
+Friday
+
+---
+
+FORMAT(GETDATE(), 'dd MMMM yyyy')
+
+Output:
+
+30 May 2026
+
+---
+
+# Difference Between CAST, CONVERT and FORMAT
+
+CAST()
+
+- Data type conversion only
+- ANSI SQL standard
+- Faster
+
+CONVERT()
+
+- Conversion + predefined styles
+- SQL Server specific
+
+FORMAT()
+
+- Fully customizable
+- Most readable
+- Slightly slower
+
+---
+
+# Common Formatting Patterns
+
+yyyy
+→ 2026
+
+MM
+→ 05
+
+dd
+→ 30
+
+MMMM
+→ May
+
+dddd
+→ Friday
+
+HH:mm:ss
+→ 22:45:10
+
+dd/MM/yyyy
+→ 30/05/2026
+
+dd MMM yyyy
+→ 30 May 2026
+
+---
+
+# Real World Use Cases
+
+- Dashboard reports
+- User interfaces
+- Export files
+- Monthly reporting
+- Customer-facing applications
+
+---
+
+# Functions Covered Today
+
+1. CAST()
+2. CONVERT()
+3. FORMAT()
+
+These are among the most commonly used date formatting functions in SQL Server reporting and analytics.
