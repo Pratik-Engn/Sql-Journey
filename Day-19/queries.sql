@@ -1,4 +1,4 @@
-USE sql_practice;
+Currently on Date and time function where we discussing different part of date and time function currently in formats 
 
 -- DATASETS USED:
 -- employees(employee_id, first_name, hire_date)
