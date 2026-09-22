@@ -1,15 +1,15 @@
--- ============================================================
--- SQL JOURNEY - DAY 20
--- SQL FUNDAMENTALS REVISION
--- Date: 22-09-2026
--- ============================================================
+- ============================================================
+- SQL JOURNEY - DAY 20
+- SQL FUNDAMENTALS REVISION
+- Date: 22-09-2026
+- ============================================================
 
 
--- ============================================================
--- 1. SELECT + FROM
+- ============================================================
+- 1. SELECT + FROM
 -- ============================================================
 
--- Select all columns
+- Select all columns
 SELECT *
 FROM employees;
 
@@ -26,14 +26,14 @@ FROM employees;
 SELECT DISTINCT department
 FROM employees;
 
--- Find all unique job titles
+- Find all unique job titles
 SELECT DISTINCT job_title
 FROM employees;
 
 
--- ============================================================
--- 3. WHERE
--- ============================================================
+- ============================================================
+- 3. WHERE
+- ============================================================
 
 -- Employees earning more than 50000
 SELECT *
@@ -63,9 +63,9 @@ FROM employees
 WHERE department <> 'HR';
 
 
--- ============================================================
--- 4. ORDER BY
--- ============================================================
+- ============================================================
+- 4. ORDER BY
+- ============================================================
 
 -- Sort employees by salary from lowest to highest
 SELECT *
@@ -83,9 +83,9 @@ FROM employees
 ORDER BY department ASC, salary DESC;
 
 
--- ============================================================
--- 5. LIMIT
--- ============================================================
+- ============================================================
+- 5. LIMIT
+- ============================================================
 
 -- Get the first 10 employees
 SELECT *
@@ -99,9 +99,9 @@ ORDER BY salary DESC
 LIMIT 5;
 
 
--- ============================================================
--- 6. AGGREGATE FUNCTIONS
--- ============================================================
+- ============================================================
+- 6. AGGREGATE FUNCTIONS
+- ============================================================
 
 -- Count total employees
 SELECT COUNT(*) AS total_employees
@@ -124,9 +124,9 @@ SELECT MAX(salary) AS maximum_salary
 FROM employees;
 
 
--- ============================================================
--- 7. GROUP BY
--- ============================================================
+- ============================================================
+- 7. GROUP BY
+- ============================================================
 
 -- Count employees in each department
 SELECT department, COUNT(*) AS employee_count
@@ -144,26 +144,26 @@ FROM employees
 GROUP BY department;
 
 
--- ============================================================
--- 8. HAVING
--- ============================================================
+- ============================================================
+- 8. HAVING
+- ============================================================
 
--- Departments having more than 5 employees
+- Departments having more than 5 employees
 SELECT department, COUNT(*) AS employee_count
 FROM employees
 GROUP BY department
 HAVING COUNT(*) > 5;
 
--- Departments with an average salary greater than 60000
+- Departments with an average salary greater than 60000
 SELECT department, AVG(salary) AS average_salary
 FROM employees
 GROUP BY department
 HAVING AVG(salary) > 60000;
 
 
--- ============================================================
--- 9. COMBINING MULTIPLE CLAUSES
--- ============================================================
+- ============================================================
+- 9. COMBINING MULTIPLE CLAUSES
+- ============================================================
 
 -- Find departments with more than 5 employees
 -- and display them by employee count
