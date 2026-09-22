@@ -18,11 +18,11 @@ SELECT employee_id, first_name, department
 FROM employees;
 
 
--- ============================================================
--- 2. DISTINCT
--- ============================================================
+- ============================================================
+- 2. DISTINCT
+- ============================================================
 
--- Find all unique departments
+- Find all unique departments
 SELECT DISTINCT department
 FROM employees;
 
