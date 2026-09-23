@@ -44,7 +44,7 @@ Example:
 SELECT salary * 12 AS annual_salary
 FROM employees;
 
----
+--
 
 # 2. IN
 
