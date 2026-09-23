@@ -1,21 +1,21 @@
 -- ============================================================
--- SQL JOURNEY - DAY 21
--- SQL FUNDAMENTALS REVISION - PART 2
--- Date: 23-09-2026
+- SQL JOURNEY - DAY 21
+- SQL FUNDAMENTALS REVISION - PART 2
+- Date: 23-09-2026
 -- ============================================================
 
 
--- ============================================================
--- 1. ALIASES
--- ============================================================
+- ============================================================
+- 1. ALIASES
+- ============================================================
 
--- Rename a column
+- Rename a column
 SELECT
     first_name AS employee_name
 FROM employees;
 
 
--- Calculate annual salary
+- Calculate annual salary
 SELECT
     first_name,
     salary,
@@ -23,7 +23,7 @@ SELECT
 FROM employees;
 
 
--- Multiple aliases
+- Multiple aliases
 SELECT
     first_name AS employee_name,
     department AS department_name,
@@ -31,41 +31,41 @@ SELECT
 FROM employees;
 
 
--- ============================================================
--- 2. IN
--- ============================================================
+- ============================================================
+- 2. IN
+- ============================================================
 
--- Employees from Sales, Marketing or HR
+- Employees from Sales, Marketing or HR
 SELECT *
 FROM employees
 WHERE department IN ('Sales', 'Marketing', 'HR');
 
 
--- Employees from specific job roles
+- Employees from specific job roles
 SELECT *
 FROM employees
 WHERE job_title IN ('Data Analyst', 'Data Scientist', 'Engineer');
 
 
--- ============================================================
--- 3. BETWEEN
--- ============================================================
+- ============================================================
+- 3. BETWEEN
+- ============================================================
 
--- Employees earning between 40000 and 70000
+- Employees earning between 40000 and 70000
 SELECT *
 FROM employees
 WHERE salary BETWEEN 40000 AND 70000;
 
 
--- Employees with salaries outside the range
+- Employees with salaries outside the range
 SELECT *
 FROM employees
 WHERE salary NOT BETWEEN 40000 AND 70000;
 
 
--- ============================================================
--- 4. LIKE
--- ============================================================
+- ============================================================
+- 4. LIKE
+- ============================================================
 
 -- Names starting with A
 SELECT *
@@ -73,7 +73,7 @@ FROM employees
 WHERE first_name LIKE 'A%';
 
 
--- Names ending with n
+- Names ending with n
 SELECT *
 FROM employees
 WHERE first_name LIKE '%n';
@@ -91,9 +91,9 @@ FROM employees
 WHERE first_name LIKE '_____';
 
 
--- ============================================================
--- 5. NULL
--- ============================================================
+- ============================================================
+- 5. NULL
+- ============================================================
 
 -- Employees with missing phone numbers
 SELECT *
@@ -107,9 +107,9 @@ FROM employees
 WHERE phone_number IS NOT NULL;
 
 
--- ============================================================
--- 6. COALESCE
--- ============================================================
+- ============================================================
+- 6. COALESCE
+- ============================================================
 
 -- Replace missing phone numbers
 SELECT
@@ -126,7 +126,7 @@ FROM employees;
 
 
 -- ============================================================
--- 7. CASE WHEN
+- 7. CASE WHEN
 -- ============================================================
 
 -- Categorize employees based on salary
@@ -153,9 +153,9 @@ SELECT
 FROM employees;
 
 
--- ============================================================
--- 8. STRING FUNCTIONS
--- ============================================================
+- ============================================================
+- 8. STRING FUNCTIONS
+- ============================================================
 
 -- Convert names to uppercase
 SELECT
@@ -188,9 +188,9 @@ SELECT
 FROM employees;
 
 
--- ============================================================
--- 9. DATE FUNCTIONS
--- ============================================================
+- ============================================================
+- 9. DATE FUNCTIONS
+- ============================================================
 
 -- Extract year from joining date
 SELECT
@@ -216,25 +216,25 @@ SELECT
 FROM employees;
 
 
--- ============================================================
--- 10. CAST
--- ============================================================
+- ============================================================
+- 10. CAST
+- ============================================================
 
--- Convert salary to integer
+- Convert salary to integer
 SELECT
     CAST(salary AS INTEGER) AS salary_integer
 FROM employees;
 
 
--- Convert a value to a date
+- Convert a value to a date
 SELECT
     CAST(joining_date AS DATE) AS joining_date
 FROM employees;
 
 
--- ============================================================
--- 11. BASIC JOIN REVISION
--- ============================================================
+- ============================================================
+- 11. BASIC JOIN REVISION
+- ============================================================
 
 -- INNER JOIN
 SELECT
@@ -254,9 +254,9 @@ LEFT JOIN departments d
     ON e.department_id = d.department_id;
 
 
--- ============================================================
+- ============================================================
 -- 12. COMBINING FILTERING + CASE
--- ============================================================
+- ============================================================
 
 SELECT
     first_name,
@@ -272,9 +272,9 @@ WHERE salary IS NOT NULL
 ORDER BY salary DESC;
 
 
--- ============================================================
+- ============================================================
 -- 13. COMBINING GROUP BY + CASE
--- ============================================================
+- ============================================================
 
 SELECT
     CASE
@@ -293,9 +293,9 @@ GROUP BY
 ORDER BY employee_count DESC;
 
 
--- ============================================================
+- ============================================================
 -- 14. COMBINING MULTIPLE CONCEPTS
--- ============================================================
+- ============================================================
 
 SELECT
     department,
@@ -310,9 +310,9 @@ HAVING COUNT(*) > 2
 ORDER BY average_salary DESC;
 
 
--- ============================================================
+- ============================================================
 -- 15. FINAL REVISION QUERY
--- ============================================================
+- ============================================================
 
 SELECT
     d.department_name AS department,
