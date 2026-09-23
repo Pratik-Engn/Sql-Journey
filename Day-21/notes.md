@@ -19,7 +19,7 @@ Day 21 focuses on other important SQL fundamentals that are frequently used when
 
 The objective is to refresh these concepts before continuing with the SQL journey.
 
----
+--
 
 # 1. Column Aliases
 
