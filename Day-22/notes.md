@@ -37,7 +37,7 @@ FROM table1
 UNION
 
 SELECT column1, column2
-FROM table2;
+FROM table2;.
 
 ### Important
 
