@@ -1,16 +1,16 @@
 -- ============================================================
--- SQL JOURNEY - DAY 22
--- SET OPERATORS AND JOINS REVISION
+- SQL JOURNEY - DAY 22
+- SET OPERATORS AND JOINS REVISION
 -- ============================================================
 
 
 -- ============================================================
--- PART 1: SET OPERATORS
+- PART 1: SET OPERATORS
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 1. UNION
+- 1. UNION
 -- ------------------------------------------------------------
 
 SELECT employee_name
@@ -23,7 +23,7 @@ FROM former_employees;
 
 
 -- ------------------------------------------------------------
--- 2. UNION ALL
+- 2. UNION ALL
 -- ------------------------------------------------------------
 
 SELECT employee_name
@@ -36,7 +36,7 @@ FROM former_employees;
 
 
 -- ------------------------------------------------------------
--- 3. UNION vs UNION ALL
+- 3. UNION vs UNION ALL
 -- ------------------------------------------------------------
 
 -- UNION removes duplicate rows
@@ -60,7 +60,7 @@ FROM former_employees;
 
 
 -- ------------------------------------------------------------
--- 4. INTERSECT
+- 4. INTERSECT
 -- ------------------------------------------------------------
 
 -- Customers who exist in both datasets
@@ -74,7 +74,7 @@ FROM store_customers;
 
 
 -- ------------------------------------------------------------
--- 5. EXCEPT
+- 5. EXCEPT
 -- ------------------------------------------------------------
 
 -- Customers who exist in customers
@@ -99,12 +99,12 @@ FROM customers;
 
 
 -- ============================================================
--- PART 2: INNER JOIN
+- PART 2: INNER JOIN
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 6. Basic INNER JOIN
+- 6. Basic INNER JOIN
 -- ------------------------------------------------------------
 
 SELECT
@@ -117,7 +117,7 @@ INNER JOIN departments d
 
 
 -- ------------------------------------------------------------
--- 7. INNER JOIN with WHERE
+- 7. INNER JOIN with WHERE
 -- ------------------------------------------------------------
 
 SELECT
@@ -131,7 +131,7 @@ WHERE e.salary > 50000;
 
 
 -- ------------------------------------------------------------
--- 8. INNER JOIN with ORDER BY
+- 8. INNER JOIN with ORDER BY
 -- ------------------------------------------------------------
 
 SELECT
@@ -145,12 +145,12 @@ ORDER BY e.salary DESC;
 
 
 -- ============================================================
--- PART 3: LEFT JOIN
+- PART 3: LEFT JOIN
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 9. Basic LEFT JOIN
+- 9. Basic LEFT JOIN
 -- ------------------------------------------------------------
 
 SELECT
@@ -162,7 +162,7 @@ LEFT JOIN departments d
 
 
 -- ------------------------------------------------------------
--- 10. Find employees without departments
+- 10. Find employees without departments
 -- ------------------------------------------------------------
 
 SELECT
@@ -175,7 +175,7 @@ WHERE d.department_id IS NULL;
 
 
 -- ------------------------------------------------------------
--- 11. LEFT JOIN with filtering
+- 11. LEFT JOIN with filtering
 -- ------------------------------------------------------------
 
 SELECT
@@ -188,12 +188,12 @@ WHERE e.salary > 50000;
 
 
 -- ============================================================
--- PART 4: RIGHT JOIN
+- PART 4: RIGHT JOIN
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 12. Basic RIGHT JOIN
+- 12. Basic RIGHT JOIN
 -- ------------------------------------------------------------
 
 SELECT
@@ -205,12 +205,12 @@ RIGHT JOIN departments d
 
 
 -- ============================================================
--- PART 5: FULL OUTER JOIN
+- PART 5: FULL OUTER JOIN
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 13. FULL OUTER JOIN
+- 13. FULL OUTER JOIN
 -- ------------------------------------------------------------
 
 SELECT
@@ -222,7 +222,7 @@ FULL OUTER JOIN departments d
 
 
 -- ------------------------------------------------------------
--- 14. Find unmatched records on either side
+- 14. Find unmatched records on either side
 -- ------------------------------------------------------------
 
 SELECT
@@ -236,12 +236,12 @@ WHERE e.employee_id IS NULL
 
 
 -- ============================================================
--- PART 6: CROSS JOIN
+- PART 6: CROSS JOIN
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 15. CROSS JOIN
+- 15. CROSS JOIN
 -- ------------------------------------------------------------
 
 SELECT
@@ -252,12 +252,12 @@ CROSS JOIN departments d;
 
 
 -- ============================================================
--- PART 7: SELF JOIN
+- PART 7: SELF JOIN
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 16. Employee and Manager
+- 16. Employee and Manager
 -- ------------------------------------------------------------
 
 SELECT
@@ -269,12 +269,12 @@ LEFT JOIN employees m
 
 
 -- ============================================================
--- PART 8: MULTIPLE JOINS
+- PART 8: MULTIPLE JOINS
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 17. Joining three tables
+- 17. Joining three tables
 -- ------------------------------------------------------------
 
 SELECT
@@ -289,12 +289,12 @@ JOIN locations l
 
 
 -- ============================================================
--- PART 9: JOIN + AGGREGATION
+- PART 9: JOIN + AGGREGATION
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 18. Employee count by department
+- 18. Employee count by department
 -- ------------------------------------------------------------
 
 SELECT
@@ -308,7 +308,7 @@ ORDER BY employee_count DESC;
 
 
 -- ------------------------------------------------------------
--- 19. Average salary by department
+- 19. Average salary by department
 -- ------------------------------------------------------------
 
 SELECT
@@ -322,12 +322,12 @@ ORDER BY average_salary DESC;
 
 
 -- ============================================================
--- PART 10: MULTIPLE JOIN CONDITIONS
+- PART 10: MULTIPLE JOIN CONDITIONS
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 20. JOIN using multiple conditions
+- 20. JOIN using multiple conditions
 -- ------------------------------------------------------------
 
 SELECT *
@@ -338,12 +338,12 @@ JOIN shipments s
 
 
 -- ============================================================
--- PART 11: SET OPERATORS + ORDERING
+- PART 11: SET OPERATORS + ORDERING
 -- ============================================================
 
 
 -- ------------------------------------------------------------
--- 21. UNION with ORDER BY
+- 21. UNION with ORDER BY
 -- ------------------------------------------------------------
 
 SELECT employee_name
@@ -358,7 +358,7 @@ ORDER BY employee_name;
 
 
 -- ============================================================
--- PART 12: FINAL REVISION QUESTIONS
+- PART 12: FINAL REVISION QUESTIONS
 -- ============================================================
 
 
@@ -373,7 +373,7 @@ SELECT customer_id
 FROM store_customers;
 
 
--- 23. Find customers who have never placed an order
+- 23. Find customers who have never placed an order
 
 SELECT customer_id
 FROM customers
@@ -384,7 +384,7 @@ SELECT customer_id
 FROM orders;
 
 
--- 24. Find every department and its employee count,
+- 24. Find every department and its employee count,
 -- including departments with zero employees
 
 SELECT
@@ -397,7 +397,7 @@ GROUP BY d.department_name
 ORDER BY employee_count DESC;
 
 
--- 25. Find employees who do not have a valid department
+- 25. Find employees who do not have a valid department
 
 SELECT
     e.employee_id,
@@ -408,7 +408,7 @@ LEFT JOIN departments d
 WHERE d.department_id IS NULL;
 
 
--- 26. Find employee-manager relationships
+- 26. Find employee-manager relationships
 
 SELECT
     e.employee_name AS employee,
@@ -418,7 +418,7 @@ LEFT JOIN employees m
     ON e.manager_id = m.employee_id;
 
 
--- 27. Find departments with average salary above 60000
+- 27. Find departments with average salary above 60000
 
 SELECT
     d.department_name,
