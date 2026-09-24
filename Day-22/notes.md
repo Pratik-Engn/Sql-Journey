@@ -1,5 +1,6 @@
 # SQL Journey - Day 22
 ## Set Operators and JOINs Revision
+This day is added I am returning back so focus on fundamental of SQL that is joining of two tables.
 
 **Date:** 24-09-2026
 
