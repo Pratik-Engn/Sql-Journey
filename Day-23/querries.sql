@@ -1,8 +1,8 @@
--- SQL Journey - Day 23
--- Date Functions + String Functions Revision
+- SQL Journey - Day 23
+- Date Functions + String Functions Revision
 
 
--- DATE FUNCTIONS
+- DATE FUNCTIONS
 
 SELECT CURRENT_DATE;
 
