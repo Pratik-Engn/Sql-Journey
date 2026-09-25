@@ -1,6 +1,5 @@
 # SQL Journey - Day 23
-## Date Functions and String Functions Revision
-
+## Date Functions and String Functions Revision .... These are intial learning getting revision again and again. 
 **Date:** 25-09-2026
 
 Today's session focuses on two areas that I consider weak points:
