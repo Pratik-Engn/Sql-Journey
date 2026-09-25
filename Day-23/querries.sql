@@ -49,7 +49,7 @@ SELECT
 FROM orders;
 
 
--- STRING FUNCTIONS
+-- STRING FUNCTIONS---
 
 SELECT
     first_name,
