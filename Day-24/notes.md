@@ -1,5 +1,5 @@
 # SQL Journey - Day 24
-## SQL Revision - Questions and Answers
+## SQL Revision - Questions and Answers (question are from AI )
 
 **Date:** 26-09-2026
 
