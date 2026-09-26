@@ -1,22 +1,22 @@
--- ============================================================
--- SQL JOURNEY - DAY 24
--- SQL REVISION - QUESTIONS AND ANSWERS
--- ============================================================
-
-
--- ============================================================
--- BASIC SQL
+- ============================================================
+- SQL JOURNEY - DAY 24
+- SQL REVISION - QUESTIONS AND ANSWERS
 -- ============================================================
 
 
--- Q1. Display all employees.
+-- ============================================================
+- BASIC SQL
+-- ============================================================
+
+
+- Q1. Display all employees.
 -- ANSWER:
 
 SELECT *
 FROM employees;
 
 
--- Q2. Display only employee name, department and salary.
+- Q2. Display only employee name, department and salary.
 -- ANSWER:
 
 SELECT
@@ -26,14 +26,14 @@ SELECT
 FROM employees;
 
 
--- Q3. Display all unique departments.
+- Q3. Display all unique departments.
 -- ANSWER:
 
 SELECT DISTINCT department
 FROM employees;
 
 
--- Q4. Display employees earning more than 50000.
+- Q4. Display employees earning more than 50000.
 -- ANSWER:
 
 SELECT *
@@ -41,7 +41,7 @@ FROM employees
 WHERE salary > 50000;
 
 
--- Q5. Display the 5 highest-paid employees.
+- Q5. Display the 5 highest-paid employees.
 -- ANSWER:
 
 SELECT *
@@ -50,12 +50,12 @@ ORDER BY salary DESC
 LIMIT 5;
 
 
--- ============================================================
--- AGGREGATE FUNCTIONS
--- ============================================================
+- ============================================================
+- AGGREGATE FUNCTIONS
+- ============================================================
 
 
--- Q6. Find the total number of employees.
+- Q6. Find the total number of employees.
 -- ANSWER:
 
 SELECT COUNT(*) AS total_employees
@@ -85,9 +85,9 @@ SELECT SUM(salary) AS total_salary
 FROM employees;
 
 
--- ============================================================
--- GROUP BY AND HAVING
--- ============================================================
+- ============================================================
+- GROUP BY AND HAVING
+- ============================================================
 
 
 -- Q10. Find the number of employees in each department.
@@ -153,8 +153,8 @@ FROM employees
 WHERE salary BETWEEN 40000 AND 70000;
 
 
--- Q16. Find employees whose names start with A.
--- ANSWER:
+- Q16. Find employees whose names start with A.
+- ANSWER:
 
 SELECT *
 FROM employees
