@@ -7,7 +7,7 @@ Today's session focuses entirely on solving problems involving SQL Date and Time
 
 Date functions have been one of my weaker areas, so today's goal is to improve practical problem-solving rather than simply memorizing syntax.
 
----
+-----
 
 # 1. Important Date Data Types
 
@@ -42,7 +42,7 @@ Example:
 
 14:30:00
 
----
+------
 
 # 2. Current Date and Time
 
