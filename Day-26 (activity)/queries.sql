@@ -8,7 +8,7 @@
 - MySQL syntax
 - Try each question before checking the answer.
 - =========================================================
-
+-All the data sets used are from random AI sites for the activity
 
 - =========================================================
 - DATASET
