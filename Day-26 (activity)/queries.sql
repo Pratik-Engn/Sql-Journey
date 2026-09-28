@@ -1,21 +1,18 @@
 
----
-
-# `queries.sql`
 
 ```sql
 -- =========================================================
--- DAY 26 — SQL QUICK ACTIVITY
+- DAY 26 â€” SQL QUICK ACTIVITY
 -- =========================================================
--- Dataset: employees
--- MySQL syntax
--- Try each question before checking the answer.
--- =========================================================
+- Dataset: employees
+- MySQL syntax
+- Try each question before checking the answer.
+- =========================================================
 
 
--- =========================================================
--- DATASET
--- =========================================================
+- =========================================================
+- DATASET
+- =========================================================
 
 DROP TABLE IF EXISTS employees;
 
@@ -48,7 +45,7 @@ VALUES
 
 
 -- =========================================================
--- SECTION 1 — SELECT & DISTINCT
+-- SECTION 1 â€” SELECT & DISTINCT
 -- =========================================================
 
 -- Q1. Display all employees.
@@ -87,7 +84,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 2 — WHERE & BASIC FILTERING
+-- SECTION 2 â€” WHERE & BASIC FILTERING
 -- =========================================================
 
 -- Q6. Find employees from the Data department.
@@ -163,7 +160,7 @@ WHERE city IN ('Mumbai', 'Delhi');
 
 
 -- =========================================================
--- SECTION 3 — IN, BETWEEN & LIKE
+-- SECTION 3 â€” IN, BETWEEN & LIKE
 -- =========================================================
 
 -- Q16. Find employees in Kolkata, Mumbai, or Delhi.
@@ -209,7 +206,7 @@ WHERE department IN ('Data', 'IT');
 
 
 -- =========================================================
--- SECTION 4 — NULL HANDLING
+-- SECTION 4 â€” NULL HANDLING
 -- =========================================================
 
 -- Q22. Find employees whose salary is NULL.
@@ -250,7 +247,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 5 — ORDER BY & LIMIT
+-- SECTION 5 â€” ORDER BY & LIMIT
 -- =========================================================
 
 -- Q26. Sort employees by salary from highest to lowest.
@@ -293,7 +290,7 @@ LIMIT 3;
 
 
 -- =========================================================
--- SECTION 6 — STRING OPERATIONS
+-- SECTION 6 â€” STRING OPERATIONS
 -- =========================================================
 
 -- Q31. Display first and last name together as full_name.
@@ -336,7 +333,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 7 — DATE OPERATIONS
+-- SECTION 7 â€” DATE OPERATIONS
 -- =========================================================
 
 -- Q36. Display employee names and their hire year.
@@ -378,7 +375,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 8 — AGGREGATION & GROUP BY
+-- SECTION 8 â€” AGGREGATION & GROUP BY
 -- =========================================================
 
 -- Q41. Count all employees.
@@ -445,7 +442,7 @@ HAVING AVG(salary) > 65000;
 
 
 -- =========================================================
--- SECTION 9 — COMBINED REVISION
+-- SECTION 9 â€” COMBINED REVISION
 -- =========================================================
 
 -- Q49. Find active Data employees earning more than 60000,
