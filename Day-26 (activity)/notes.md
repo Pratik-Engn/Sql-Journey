@@ -1,6 +1,6 @@
 # Day 26 — SQL Quick Activity: Filtering & Basic Data Operations
 
-## 🎯 Objective
+##  Objective
 
 Today is a short, practical SQL activity using one small virtual dataset.
 
