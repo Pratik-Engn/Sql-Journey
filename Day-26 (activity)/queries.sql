@@ -6,7 +6,7 @@
 - MySQL syntax
 - Try each question before checking the answer.
 - =========================================================
--All the data sets used are from random AI sites for the activity
+-All the data sets used are from random AI sites for the activity. This activity consists of data sets and solutions.
 
 - =========================================================
 - DATASET
