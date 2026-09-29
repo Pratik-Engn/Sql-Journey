@@ -1,0 +1,38 @@
+# Day 27 — SQL NULL Functions
+
+## Objective
+
+Today we focus specifically on handling `NULL` values in SQL.
+
+`NULL` represents a missing, unknown, or unavailable value.
+
+Important: `NULL` is NOT the same as:
+
+- `0`
+- Empty string `''`
+- `'NULL'` as text
+
+---
+
+# 1. What is NULL?
+
+Example:
+
+| employee_id | name | salary |
+|---:|---|---:|
+| 101 | Aarav | 65000 |
+| 102 | Priya | NULL |
+| 103 | Rohan | 58000 |
+
+Priya's salary is unknown or unavailable.
+
+It is not equal to zero.
+
+---
+
+# 2. Checking for NULL
+
+Use:
+
+```sql
+IS NULL
