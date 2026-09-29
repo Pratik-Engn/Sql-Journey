@@ -12,7 +12,7 @@ Important: `NULL` is NOT the same as:
 - Empty string `''`
 - `'NULL'` as text
 
----
+-----
 
 # 1. What is NULL?
 
