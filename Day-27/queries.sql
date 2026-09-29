@@ -263,3 +263,31 @@ SELECT
     COALESCE(phone, email, 'No Contact') AS contact
 
 FROM employees;
+
+-- =========================================================
+-- Q18. Find employees who have either a missing phone number
+-- or a missing email address.
+-- =========================================================
+
+SELECT
+    employee_id,
+    first_name,
+    last_name,
+    phone,
+    email
+FROM employees
+WHERE phone IS NULL
+   OR email IS NULL;
+
+
+- =========================================================
+- Q19. Count how many employees have NULL values in
+- salary, bonus, phone, and email.
+-- =========================================================
+
+SELECT
+    COUNT(*) - COUNT(salary) AS missing_salary,
+    COUNT(*) - COUNT(bonus) AS missing_bonus,
+    COUNT(*) - COUNT(phone) AS missing_phone,
+    COUNT(*) - COUNT(email) AS missing_email
+FROM employees;
