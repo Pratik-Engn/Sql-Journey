@@ -4,6 +4,7 @@
 - =========================================================
 -- MySQL
 -- Try solving each question before checking the answer.
+  -The data sets used are mostly from CHAT GPT and GWOK.   
 -- =========================================================
 
 
