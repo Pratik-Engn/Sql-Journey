@@ -1,14 +1,14 @@
 
 -- =========================================================
--- DAY 28 — SQL CASE STATEMENT
+- DAY 28 â€” SQL CASE STATEMENT
 -- =========================================================
 -- MySQL
--- Try each question yourself before checking the answer.
+- Try each question yourself before checking the answer.
 -- =========================================================
-
+All the Data sets are used from Gwrok. 
 
 -- =========================================================
--- DATASET
+- DATASET
 -- =========================================================
 
 DROP TABLE IF EXISTS employees;
@@ -41,13 +41,13 @@ VALUES
 
 
 -- =========================================================
--- SECTION 1 — BASIC CASE
+- SECTION 1 â€” BASIC CASE
 -- =========================================================
 
--- Q1. Classify employees based on salary:
--- 80000 or above ? High
--- 60000 or above ? Medium
--- Otherwise ? Low
+- Q1. Classify employees based on salary:
+- 80000 or above ? High
+- 60000 or above ? Medium
+- Otherwise ? Low
 
 SELECT
     name,
@@ -90,7 +90,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 2 — CASE WITH AND / OR / IN
+-- SECTION 2 â€” CASE WITH AND / OR / IN
 -- =========================================================
 
 -- Q4. Classify employees as Technical or Non-Technical.
@@ -139,7 +139,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 3 — EXPERIENCE CATEGORIES
+-- SECTION 3 â€” EXPERIENCE CATEGORIES
 -- =========================================================
 
 -- Q7. Categorize employees based on experience:
@@ -175,7 +175,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 4 — SIMPLE CASE
+-- SECTION 4 â€” SIMPLE CASE
 -- =========================================================
 
 -- Q9. Use SIMPLE CASE to classify departments.
@@ -207,7 +207,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 5 — CASE WITH NULL
+-- SECTION 5 â€” CASE WITH NULL
 -- =========================================================
 
 -- Q11. Display salary status:
@@ -237,7 +237,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 6 — CASE WITH ORDER BY
+-- SECTION 6 â€” CASE WITH ORDER BY
 -- =========================================================
 
 -- Q13. Sort employees in this custom order:
@@ -280,7 +280,7 @@ ORDER BY
 
 
 -- =========================================================
--- SECTION 7 — CASE WITH AGGREGATION
+-- SECTION 7 â€” CASE WITH AGGREGATION
 -- =========================================================
 
 -- Q15. Count employees earning 70000 or more.
@@ -333,7 +333,7 @@ FROM employees;
 
 
 -- =========================================================
--- SECTION 8 — CASE WITH GROUP BY
+-- SECTION 8 â€” CASE WITH GROUP BY
 -- =========================================================
 
 -- Q19. Group employees into salary categories
@@ -379,7 +379,7 @@ GROUP BY
 
 
 -- =========================================================
--- SECTION 9 — COMBINED CASE PROBLEMS
+-- SECTION 9 â€” COMBINED CASE PROBLEMS
 -- =========================================================
 
 -- Q21. Create an employee classification:
