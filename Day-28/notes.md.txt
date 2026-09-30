@@ -1,0 +1,14 @@
+# Day 28 — SQL CASE Statement
+
+## Objective
+
+Today we focus on the SQL `CASE` statement.
+
+`CASE` allows us to apply conditional logic inside SQL queries.
+
+It is similar to:
+
+```text
+if
+else if
+else
