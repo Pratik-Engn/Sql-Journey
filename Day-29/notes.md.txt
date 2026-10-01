@@ -1,0 +1,19 @@
+# Day 29 - SQL Window Functions
+
+Today was a short study session focused on the basics of SQL Window Functions.
+
+Window Functions perform calculations across related rows while keeping the individual rows.
+
+Main topics:
+- `OVER()`
+- `PARTITION BY`
+- `ORDER BY`
+- `ROW_NUMBER()`
+- `RANK()`
+- `DENSE_RANK()`
+- `LAG()`
+- `LEAD()`
+- `SUM() OVER()`
+- `AVG() OVER()`
+
+GROUP BY reduces rows, while Window Functions keep the rows.
