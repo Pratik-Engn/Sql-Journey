@@ -1,3 +1,5 @@
+-Short Querries related to window function tomorrow 
+
 SELECT
     name,
     department,
