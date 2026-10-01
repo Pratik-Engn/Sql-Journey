@@ -12,3 +12,10 @@ SELECT
     LAG(salary) OVER (PARTITION BY department ORDER BY salary) AS previous_salary,
     LEAD(salary) OVER (PARTITION BY department ORDER BY salary) AS next_salary
 FROM employees;
+2. Second query 
+SELECT
+    name,
+    department,
+    salary,
+    salary - AVG(salary) OVER (PARTITION BY department) AS difference_from_department_avg
+FROM employees;
