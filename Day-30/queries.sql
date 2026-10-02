@@ -1,5 +1,5 @@
--- DAY 30 - SQL 30-DAY REVISION
-
+- DAY 30 - SQL 30-DAY REVISION
+-In this revison all the topic that we have used in last 30 days
 -- 1. SELECT
 SELECT name, department, salary
 FROM employees;
