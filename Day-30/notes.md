@@ -1,5 +1,5 @@
 # Day 30 - SQL 30-Day Revision
-
+This notes are made form GPT as queries took of time so no notes updated later.
 Today is a complete revision of the SQL concepts learned so far, from basic SQL to Window Functions.
 
 ## 1. SELECT
