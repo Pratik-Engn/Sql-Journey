@@ -1,20 +1,20 @@
--- DAY 31 - WINDOW FUNCTION AGGREGATES
+- DAY 31 - WINDOW FUNCTION AGGREGATES
 
--- 1. Total salary
+- 1. Total salary
 SELECT
     name,
     salary,
     SUM(salary) OVER () AS total_salary
 FROM employees;
 
--- 2. Average salary
+- 2. Average salary
 SELECT
     name,
     salary,
     AVG(salary) OVER () AS average_salary
 FROM employees;
 
--- 3. Department total salary
+- 3. Department total salary
 SELECT
     name,
     department,
@@ -24,7 +24,7 @@ SELECT
     ) AS department_total
 FROM employees;
 
--- 4. Department average salary
+- 4. Department average salary
 SELECT
     name,
     department,
@@ -34,7 +34,7 @@ SELECT
     ) AS department_average
 FROM employees;
 
--- 5. Department employee count
+- 5. Department employee count
 SELECT
     name,
     department,
@@ -43,7 +43,7 @@ SELECT
     ) AS department_count
 FROM employees;
 
--- 6. Running salary total
+- 6. Running salary total
 SELECT
     name,
     salary,
@@ -52,7 +52,7 @@ SELECT
     ) AS running_total
 FROM employees;
 
--- 7. Salary compared with department average
+- 7. Salary compared with department average
 SELECT
     name,
     department,
