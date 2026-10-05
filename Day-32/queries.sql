@@ -8,21 +8,21 @@ CREATE TABLE employees (
 );
 
 
--- 2. PRIMARY KEY
+- 2. PRIMARY KEY
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     name VARCHAR(50)
 );
 
 
--- 3. UNIQUE
+- 3. UNIQUE
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     email VARCHAR(100) UNIQUE
 );
 
 
--- 4. DEFAULT
+- 4. DEFAULT
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE employees (
 );
 
 
--- 5. CHECK
+- 5. CHECK
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     name VARCHAR(50),
@@ -38,14 +38,14 @@ CREATE TABLE employees (
 );
 
 
--- 6. Create parent table
+- 6. Create parent table
 CREATE TABLE departments (
     department_id INT PRIMARY KEY,
     department_name VARCHAR(50) NOT NULL UNIQUE
 );
 
 
--- 7. Create child table with FOREIGN KEY
+- 7. Create child table with FOREIGN KEY
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -58,19 +58,19 @@ CREATE TABLE employees (
 );
 
 
--- 8. Insert valid department
+- 8. Insert valid department
 INSERT INTO departments
 VALUES (1, 'Data');
 
 
--- 9. Insert valid employee
+- 9. Insert valid employee
 INSERT INTO employees
 (employee_id, name, email, salary, department_id)
 VALUES
 (101, 'Rahul', 'rahul@email.com', 70000, 1);
 
 
--- 10. Composite Primary Key
+- 10. Composite Primary Key
 CREATE TABLE student_courses (
     student_id INT,
     course_id INT,
@@ -79,7 +79,7 @@ CREATE TABLE student_courses (
 );
 
 
--- 11. Named Constraints
+- 11. Named Constraints
 CREATE TABLE products (
     product_id INT,
     product_name VARCHAR(100) NOT NULL,
@@ -96,7 +96,7 @@ CREATE TABLE products (
 );
 
 
--- 12. Add NOT NULL
+- 12. Add NOT NULL
 ALTER TABLE employees
 MODIFY name VARCHAR(50) NOT NULL;
 
@@ -150,7 +150,7 @@ VALUES
 (103, 'Priya', 'rahul@email.com');
 
 
--- 21. Test CHECK
+- 21. Test CHECK
 -- This should fail because salary cannot be negative.
 INSERT INTO employees
 (employee_id, name, salary)
@@ -158,7 +158,7 @@ VALUES
 (104, 'Neha', -5000);
 
 
--- 22. Test FOREIGN KEY
+- 22. Test FOREIGN KEY
 -- This should fail if department_id 999 does not exist.
 INSERT INTO employees
 (employee_id, name, department_id)
@@ -166,7 +166,7 @@ VALUES
 (105, 'Ravi', 999);
 
 
--- 23. Test DEFAULT
+- 23. Test DEFAULT
 INSERT INTO employees
 (employee_id, name)
 VALUES
