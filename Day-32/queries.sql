@@ -1,5 +1,5 @@
--- DAY 32 - SQL CONSTRAINTS
-
+- DAY 32 - SQL CONSTRAINTS
+Some fundamental constraints for advance sql filters
 
 -- 1. NOT NULL
 CREATE TABLE employees (
