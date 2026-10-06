@@ -1,4 +1,5 @@
--- DAY 33 - SQL ACTIVITY
+- DAY 33 - SQL ACTIVITY
+    this solution of the question mention on the notes.md page.
 
 SELECT
     e.name,
