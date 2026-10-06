@@ -1,0 +1,42 @@
+# Day 33 - SQL Activity
+
+## Problem
+
+You have two tables: `employees` and `departments`.
+
+Find the **2nd and 3rd highest-paid employees** from the **Data department**.
+
+Requirements:
+- Use `INNER JOIN` to connect the tables.
+- Use `ORDER BY` to sort salary from highest to lowest.
+- Use `LIMIT` to return only 2 employees.
+- Use `OFFSET` to skip the highest-paid employee.
+
+### Tables
+
+**employees**
+
+| employee_id | name | department_id | salary |
+|---|---|---|---:|
+| 1 | Rahul | 101 | 90000 |
+| 2 | Priya | 101 | 80000 |
+| 3 | Amit | 102 | 75000 |
+| 4 | Neha | 101 | 70000 |
+| 5 | Ravi | 102 | 65000 |
+
+**departments**
+
+| department_id | department_name |
+|---|---|
+| 101 | Data |
+| 102 | HR |
+
+## Goal
+
+Return:
+
+- Employee name
+- Department name
+- Salary
+
+Only the **2nd and 3rd highest-paid Data employees** should be returned.
