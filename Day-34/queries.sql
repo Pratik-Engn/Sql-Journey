@@ -1,15 +1,9 @@
-
----
-
-# `queries.sql`
-
-```sql
 -- ============================================
--- SQL SUBQUERIES
+- SQL SUBQUERIES
 -- ============================================
 
 
--- 1. Employees earning more than the average salary
+- 1. Employees earning more than the average salary
 
 SELECT employee_name, salary
 FROM employees
@@ -19,7 +13,7 @@ WHERE salary > (
 );
 
 
--- 2. Employee with the highest salary
+- 2. Employee with the highest salary
 
 SELECT employee_name, salary
 FROM employees
@@ -29,7 +23,7 @@ WHERE salary = (
 );
 
 
--- 3. Employee with the lowest salary
+- 3. Employee with the lowest salary
 
 SELECT employee_name, salary
 FROM employees
@@ -39,7 +33,7 @@ WHERE salary = (
 );
 
 
--- 4. Employees earning less than the average salary
+- 4. Employees earning less than the average salary
 
 SELECT employee_name, salary
 FROM employees
@@ -49,7 +43,7 @@ WHERE salary < (
 );
 
 
--- 5. Employees in departments located in New York
+- 5. Employees in departments located in New York
 
 SELECT employee_name, department_id
 FROM employees
@@ -60,7 +54,7 @@ WHERE department_id IN (
 );
 
 
--- 6. Employees not in departments located in New York
+- 6. Employees not in departments located in New York
 
 SELECT employee_name, department_id
 FROM employees
@@ -71,7 +65,7 @@ WHERE department_id NOT IN (
 );
 
 
--- 7. Employees who have placed at least one order
+- 7. Employees who have placed at least one order
 
 SELECT employee_name
 FROM employees e
