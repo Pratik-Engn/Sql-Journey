@@ -1,0 +1,253 @@
+# Problems Day 1
+
+## Question 1 — Find Customer Referee
+
+You are given a `Customer` table containing customer information.
+
+Find the names of customers whose `referee_id` is not equal to `2`.
+
+Customers with a `NULL` referee_id should also be included.
+
+Return the result in any order.
+
+---
+
+## Question 2 — Big Countries
+
+You are given a `World` table containing:
+
+- `name` — country name
+- `continent` — continent
+- `area` — area of the country
+- `population` — population
+- `gdp` — GDP
+
+Find the name, population, and area of countries that are considered big.
+
+A country is considered big if:
+
+- Its area is at least 3,000,000, OR
+- Its population is at least 25,000,000.
+
+Return the country name, population, and area.
+
+---
+
+## Question 3 — Article Views I
+
+You are given a `Views` table containing:
+
+- `article_id`
+- `author_id`
+- `viewer_id`
+- `view_date`
+
+Find the IDs of authors who viewed their own articles.
+
+An author viewed their own article when `author_id` is equal to `viewer_id`.
+
+Return the author IDs without duplicates.
+
+Sort the result in ascending order.
+
+---
+
+## Question 4 — Invalid Tweets
+
+You are given a `Tweets` table containing:
+
+- `tweet_id`
+- `content`
+
+A tweet is considered invalid if the number of characters in its `content` is strictly greater than 15.
+
+Find the IDs of all invalid tweets.
+
+Return the result in any order.
+
+---
+
+## Question 5 — Product Sales Analysis I
+
+You are given two tables:
+
+### Sales
+- `sale_id`
+- `product_id`
+- `year`
+- `quantity`
+- `price`
+
+### Product
+- `product_id`
+- `product_name`
+
+For every sale in the `Sales` table, report:
+
+- `product_name`
+- `year`
+- `price`
+
+Use the relationship between `Sales.product_id` and `Product.product_id`.
+
+---
+
+## Question 6 — Customer Who Visited but Did Not Make Any Transactions
+
+You are given two tables:
+
+### Visits
+- `visit_id`
+- `customer_id`
+
+### Transactions
+- `transaction_id`
+- `visit_id`
+- `amount`
+
+Find the IDs of customers who visited the mall but did not make any transactions during that visit.
+
+Return the customer IDs in any order.
+
+---
+
+## Question 7 — Number of Unique Subjects Taught by Each Teacher
+
+You are given a `Teacher` table containing:
+
+- `teacher_id`
+- `subject_id`
+- `dept_id`
+
+Find the number of unique subjects each teacher teaches.
+
+Return:
+
+- `teacher_id`
+- `cnt` — number of unique subjects taught by that teacher
+
+---
+
+## Question 8 — Count Exams Written by Each Student
+
+You are given two tables:
+
+### Students
+- `student_id`
+- `student_name`
+
+### Examinations
+- `student_id`
+- `subject_id`
+
+For every student and every subject, find the number of times the student attended/wrote that subject's exam.
+
+Include every student-subject combination, even if the student never wrote that exam.
+
+If a student did not write an exam for a particular subject, return `0`.
+
+Return:
+
+- `student_id`
+- `student_name`
+- `subject_id`
+- `subject_name`
+- `attended_exams`
+
+Order the result by `student_id`, then `subject_id`.
+
+---
+
+## Question 9 — Managers With at Least One Report
+
+You are given an `Employee` table where `managerId` references another employee.
+
+Columns:
+
+- `id`
+- `name`
+- `managerId`
+
+Find managers who have at least one employee reporting directly to them.
+
+Return the manager's name.
+
+---
+
+## Question 10 — Employee Bonus
+
+You are given two tables:
+
+### Employee
+- `empId`
+- `name`
+- `supervisor`
+- `salary`
+
+### Bonus
+- `empId`
+- `bonus`
+
+Find the name and bonus amount of every employee who:
+
+- Received a bonus less than 1000, OR
+- Did not receive a bonus at all.
+
+Return the result ordered by `empId`.
+
+---
+
+## Question 11 — Average Selling Price
+
+You are given two tables:
+
+### Prices
+- `product_id`
+- `start_date`
+- `end_date`
+- `price`
+
+### UnitsSold
+- `product_id`
+- `purchase_date`
+- `units`
+
+For each product, calculate its average selling price.
+
+The average selling price is:
+
+`SUM(price × units) / SUM(units)`
+
+Only match a sale with a price when the purchase date falls between the price's start and end dates.
+
+Round the result to 2 decimal places.
+
+Return:
+
+- `product_id`
+- `average_price`
+
+---
+
+## Question 12 — Immediate Food Delivery II
+
+You are given a `Delivery` table containing:
+
+- `order_id`
+- `customer_id`
+- `order_date`
+- `customer_pref_delivery_date`
+
+For each customer, consider only their earliest order.
+
+Find the percentage of those first orders that were delivered on the customer's preferred delivery date.
+
+An order is considered immediate when:
+
+`order_date = customer_pref_delivery_date`
+
+Return the percentage rounded to 2 decimal places.
+
+Return the column:
+
+- `immediate_percentage`
