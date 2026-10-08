@@ -12,7 +12,7 @@ WHERE referee_id <> 2
    OR referee_id IS NULL;
 
 
--- Question 2 — Big Countries
+- Question 2 — Big Countries
 
 SELECT name, population, area
 FROM World
@@ -20,7 +20,7 @@ WHERE area >= 3000000
    OR population >= 25000000;
 
 
--- Question 3 — Article Views I
+- Question 3 — Article Views I
 
 SELECT DISTINCT author_id AS id
 FROM Views
@@ -28,14 +28,14 @@ WHERE author_id = viewer_id
 ORDER BY author_id ASC;
 
 
--- Question 4 — Invalid Tweets
+- Question 4 — Invalid Tweets
 
 SELECT tweet_id
 FROM Tweets
 WHERE LENGTH(content) > 15;
 
 
--- Question 5 — Product Sales Analysis I
+- Question 5 — Product Sales Analysis I
 
 SELECT p.product_name, s.year, s.price
 FROM Sales s
@@ -43,7 +43,7 @@ JOIN Product p
     ON s.product_id = p.product_id;
 
 
--- Question 6 — Customer Who Visited but Did Not Make Any Transactions
+- Question 6 — Customer Who Visited but Did Not Make Any Transactions
 
 SELECT DISTINCT v.customer_id
 FROM Visits v
@@ -52,7 +52,7 @@ LEFT JOIN Transactions t
 WHERE t.transaction_id IS NULL;
 
 
--- Question 7 — Number of Unique Subjects Taught by Each Teacher
+- Question 7 — Number of Unique Subjects Taught by Each Teacher
 
 SELECT teacher_id,
        COUNT(DISTINCT subject_id) AS cnt
@@ -60,7 +60,7 @@ FROM Teacher
 GROUP BY teacher_id;
 
 
--- Question 8 — Count Exams Written by Each Student
+- Question 8 — Count Exams Written by Each Student
 
 SELECT
     s.student_id,
@@ -83,7 +83,7 @@ ORDER BY
     sub.subject_id;
 
 
--- Question 9 — Managers With at Least One Report
+- Question 9 — Managers With at Least One Report
 
 SELECT m.name
 FROM Employee m
@@ -93,7 +93,7 @@ GROUP BY m.id, m.name
 HAVING COUNT(e.id) >= 1;
 
 
--- Question 10 — Employee Bonus
+- Question 10 — Employee Bonus
 
 SELECT e.name, b.bonus
 FROM Employee e
@@ -104,7 +104,7 @@ WHERE b.bonus < 1000
 ORDER BY e.empId;
 
 
--- Question 11 — Average Selling Price
+- Question 11 — Average Selling Price
 
 SELECT
     u.product_id,
@@ -119,7 +119,7 @@ JOIN Prices p
 GROUP BY u.product_id;
 
 
--- Question 12 — Immediate Food Delivery II
+- Question 12 — Immediate Food Delivery II
 
 SELECT
     ROUND(
