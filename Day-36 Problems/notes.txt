@@ -1,0 +1,263 @@
+# Problems Day 2
+
+## Question 13 — Count Users Registered per Contest
+
+You are given a `Register` table containing contest registrations.
+
+Columns:
+- `contest_id`
+- `user_id`
+
+Find how many users participated in each contest.
+
+Return:
+- `contest_id`
+- `total_users`
+
+Calculate the percentage of registered users only if the question explicitly asks for it. For this problem, return the total number of distinct registered users in each contest.
+
+Sort the result by `contest_id` in ascending order.
+
+---
+
+## Question 14 — Was First Order Delivered On Time
+
+You are given a `Delivery` table containing customer orders and their preferred delivery dates.
+
+Columns:
+- `order_id`
+- `customer_id`
+- `order_date`
+- `customer_pref_delivery_date`
+
+For each customer, find their first order (the order with the earliest `order_date`).
+
+Check whether that first order was delivered on the customer's preferred date.
+
+Return:
+- `customer_id`
+- `delivered_on_time`
+
+Return `Yes` when the first order date equals the preferred delivery date; otherwise, return `No`.
+
+Sort by `customer_id` in ascending order.
+
+---
+
+## Question 15 — Category Employees by Salary
+
+You are given an `Employee` table containing employee salary information.
+
+Columns:
+- `id`
+- `name`
+- `salary`
+
+Categorize each employee according to their salary:
+
+- `Low`: salary less than 4000
+- `Medium`: salary between 4000 and 7000, inclusive
+- `High`: salary greater than 7000
+
+Return:
+- `id`
+- `category`
+
+---
+
+## Question 16 — Queries Quality and Percentage
+
+You are given two tables.
+
+### Queries
+- `query_id`
+- `user_id`
+- `score`
+
+### Users
+- `user_id`
+- `user_name`
+
+For each user, calculate the percentage of their queries that have a score greater than or equal to 60.
+
+Round the percentage to two decimal places.
+
+Return:
+- `user_id`
+- `user_name`
+- `quality_percentage`
+
+Sort by `user_id` in ascending order.
+
+---
+
+## Question 17 — Students and Examinations
+
+You are given three tables.
+
+### Students
+- `student_id`
+- `student_name`
+
+### Subjects
+- `subject_id`
+- `subject_name`
+
+### Examinations
+- `student_id`
+- `subject_id`
+
+For every student and every subject, count how many times the student attended that subject's examination.
+
+Include every student-subject combination, even when the student never attended the examination.
+
+Return:
+- `student_id`
+- `student_name`
+- `subject_id`
+- `subject_name`
+- `attended_exams`
+
+Sort by `student_id`, then `subject_id`.
+
+---
+
+## Question 18 — Managers with at Least 5 Direct Reports
+
+You are given an `Employee` table containing:
+
+- `id`
+- `name`
+- `department`
+- `managerId`
+
+The `managerId` column contains the ID of the employee's manager, or `NULL` if the employee has no manager.
+
+Find managers who have at least five direct reports.
+
+Return the manager's name.
+
+---
+
+## Question 19 — Percentage of Users Attended a Contest
+
+You are given two tables.
+
+### Users
+- `user_id`
+- `user_name`
+
+### Register
+- `contest_id`
+- `user_id`
+
+For every contest, calculate the percentage of all users who registered for that contest.
+
+Round the percentage to two decimal places.
+
+Return:
+- `contest_id`
+- `percentage`
+
+Sort by `percentage` in descending order, then by `contest_id` in ascending order.
+
+---
+
+## Question 20 — Immediate Food Delivery II
+
+You are given a `Delivery` table containing:
+
+- `order_id`
+- `customer_id`
+- `order_date`
+- `customer_pref_delivery_date`
+
+For each customer, consider only their earliest order.
+
+Calculate the percentage of first orders delivered on the preferred delivery date.
+
+Round the result to two decimal places.
+
+Return:
+- `immediate_percentage`
+
+---
+
+## Question 21 — Classes With at Least 5 Students
+
+You are given a `Classes` table containing:
+
+- `student_id`
+- `class`
+
+Find all classes that have at least five students.
+
+Return one column:
+- `class`
+
+Sort the result by `class` in ascending order.
+
+---
+
+## Question 22 — Product Sales Analysis III
+
+You are given a `Sales` table containing:
+
+- `product_id`
+- `store_id`
+- `quantity`
+- `price`
+
+Find the maximum price for each product in each store.
+
+If multiple stores have the same maximum price for a product, include all of them.
+
+Return:
+- `product_id`
+- `store_id`
+- `price`
+
+Sort by `product_id` and then `store_id`, both in ascending order.
+
+---
+
+## Question 23 — Find Followers Count
+
+You are given a `Followers` table containing:
+
+- `user_id`
+- `follower_id`
+
+Find the number of followers for each user.
+
+Include users with zero followers.
+
+Return:
+- `user_id`
+- `follower_count`
+
+Sort by `user_id` in ascending order.
+
+---
+
+## Question 24 — Count Salary Categories
+
+You are given an `Employee` table containing:
+
+- `id`
+- `name`
+- `salary`
+
+Count the number of employees in each salary category:
+
+- `Low`: salary less than 4000
+- `Medium`: salary greater than or equal to 4000 and less than or equal to 7000
+- `High`: salary greater than 7000
+
+Return:
+- `category`
+- `employee_count`
+
+Use `UNION ALL` to produce the three categories, including categories with zero employees.
+
+Sort the result in this order: `High`, `Low`, `Medium`.
